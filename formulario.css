@@ -1,0 +1,81 @@
+/*http://graphemica.com*/
+/*SE INDICA LA FUENTE QUE SE UTILIZA*/
+html{
+ font-size:	16px;
+ font-family: 'Lato', sans-serif;
+}
+/*SE INDICA EL COLOR DE FONDO*/
+body{
+	background-color: #FFFFFF;
+}
+/*CLASE CONTENIDO SIRVE PARA CENTRAR EL FORMULARIO*/
+.contenido{
+ max-width: 450px;
+ height: auto;
+ background-color: #EFEFEF;
+ margin: 2% ;
+ padding-bottom: 1rem;
+}
+.form_top {
+	width: 100%;
+	text-align: center;
+	padding: 2rem 0 1rem;
+	border-top: solid .4rem #F39B53;
+	margin-bottom: 1rem;
+}
+/*CLASE form_top*/
+.form_top h2{
+	font-weight: bold;
+	color: #CAC8C8;
+	font-size: 18px;
+}
+/*SIRVE PARA DAR ESTILOS AL H2*/
+h2 span{
+	color: #F39B53;
+
+}
+
+.form_reg{
+	padding: 0 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+/*SIRVE PARA QUE LOS BOTONES ESTEN SEPARADOS DEL BORDE Y ENTRE ELLOS*/
+.boton{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 1rem;
+}
+/*TODAS LAS CLASES COMPARTEN PROPIEDADES SIMILARES*/
+.input, .registrar, .limpiar{
+	background-color: #EFEFEF;
+	padding: .5rem;
+	margin: .5rem 0;
+	border: none;
+	border-bottom: solid #C8C8C8 .2rem;
+	transition: all .5s;
+}
+/*SIRVE PARA PRENDER EL FOCO CUANDO ESTE ACTIVO */
+.input:focus{
+	border-bottom: solid #F39B53 .2rem;
+}
+/*PROPIEDADES DE LOS BOTONES*/
+.registrar, .limpiar{
+	width: 40%;
+	border-bottom: none;
+	background-color: #31B1E5;
+	color: white;
+}
+/*COLOR DEL BOTON LIMPIAR*/
+.limpiar{
+	background-color: #EDA135;
+}
+/*CAMBIA DE COLOR CUANDO SE LE PASA EL MAUSE*/
+.registrar:hover{
+	background-color: #4C9ED9;
+}
+/*CAMBIA DE COLOR CUANDO SE LE PASA EL MAUSE*/
+.limpiar:hover{
+	background-color: #FA9535;
+}
