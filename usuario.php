@@ -22,7 +22,7 @@
    
 
    <li class="nav-item">
-    <a class="p-1 nav-link disabled" href="index.html"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INICIO</a></FONT>
+    <a class="p-1 nav-link disabled" href="Adm.html"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INICIO</a></FONT>
   </li>
     
    <li class="nav-item">
@@ -51,6 +51,8 @@
           <td>Cargo</td>
           <td>Telefono</td>
           <td>Comentarios</td>
+          <td></td>
+
 
 
          </tr>
@@ -62,7 +64,6 @@
   $resultado = mysqli_query($conexion, $consulta);
   $resultcheck = mysqli_num_rows($resultado);
 
-  
   while($row=mysqli_fetch_array($resultado))
   {
   ?>
@@ -74,6 +75,8 @@
    <td> <?php echo $row['cargo_persona']?></td>
    <td> <?php echo $row['tel_persona']?></td>
    <td> <?php echo $row['coment_persona']?></td>
+   <td> <a href="#" class ="limpiar" onclick= "preguntar(<?php echo $row['id_persona']; ?>)">Eliminar</a>
+
    </tr>
    <?php
  }
@@ -84,7 +87,23 @@
 
     </table>
   </center>
+<script type="text/javascript">
 
+  function preguntar(id)
+  {
+    if (confirm('¿Está seguro de eliminar el registro con id '+ id_persona+'?')) 
+    {
+      <?php
+      $conexion=mysqli_connect("localhost","root","","ibq");
+      $sql = "DELETE FROM persona WHERE id_persona = {$id_persona}";
+      $conexion -> query($sql);
+       mysqli_close($conexion);
+
+       ?>
+    }
+
+  }
+</script>
 
 <div>
  <div class="contenido">
@@ -93,17 +112,19 @@
     </div>
     <form class="form_reg" action="registrar_persona.php" method="POST">
     
-    <input class="input" type="text" placeholder="id_persona" name = " id_persona"required  autofocus>
+    <input class="input" type="text" placeholder="id persona" name = " id_persona"required  autofocus>
     <input class="input" type="text" placeholder="Nombre" name= "Nombre" required>
-    <input class="input" type="tel"  placeholder="Apellido_Paterno" name= "Apellido_Paterno" required>
-    <input class="input" type="tex"  placeholder=" Apellido_Materno" name= "Apellido_Materno" required>
+    <input class="input" type="tel"  placeholder="Apellido Paterno" name= "Apellido_Paterno" required>
+    <input class="input" type="tex"  placeholder="Apellido Materno" name= "Apellido_Materno" required>
     <input class="input" type="text" placeholder="Cargo" name= "Cargo" required >
     <input class="input" type="text" placeholder="Telefono" name="Telefono" required>
     <input class="input" type="text" placeholder="Comentarios" name= "Comentarios" required>
    
      <div class="boton">
      <input class="registrar" type="submit" value="REGISTRAR">
+     <input class="registrar" type="button" value="ELIMINAR">
      <input class="limpiar" type="reset" value="LIMPIAR">
+
      </div>
    
     </form>

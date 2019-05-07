@@ -5,8 +5,8 @@ $id_persona=$_POST['id_persona'];
 $Nombre=$_POST['Nombre'];
 $Apellido_Paterno=$_POST['Apellido_Paterno'];
 $Apellido_Materno=$_POST['Apellido_Materno'];
-$Cargo=$_POST['Telefono'];
-$Telefono=$_POST['Cargo'];
+$Cargo=$_POST['Cargo'];
+$Telefono=$_POST['Telefono'];
 $Comentarios=$_POST['Comentarios'];
 
 
