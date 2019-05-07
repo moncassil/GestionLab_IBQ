@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +12,7 @@
   <link rel="stylesheet" href="css/misEstilos.css">
 
 
-	<title>REGISTRO DE USUARIOS </title>
+	<title>Registro de Usuarios</title>
 </head>
 <body>
    <!-- Inicio Menu -->
@@ -53,33 +52,40 @@
           <td>Telefono</td>
           <td>Comentarios</td>
 
+
+         </tr>
+<!-- Codigo para visualizar datos de mysql a html-->
 <?php
-  $conexion=mysqli_connect("localhost","root","","ibq");
+ $conexion=mysqli_connect("localhost","root","","ibq");
 
-  $slq = "SELECT * FROM `persona`;";
-  $result = mysqli_query($conexion, $sql);
-  $resultcheck = mysql_num_rows($result);
+  $consulta="SELECT * FROM persona";
+  $resultado = mysqli_query($conexion, $consulta);
+  $resultcheck = mysqli_num_rows($resultado);
 
-  if($resultcheck > 0)
+  
+  while($row=mysqli_fetch_array($resultado))
   {
-  while($mostrar=mysqli_fetch_assoc($result))
-  {
-   echo $row['id_persona']."<br>";
-   echo $row['nombre_persona']."<br>";
-   echo $row['ape_pat']."<br>";
-   echo $row['ape_mat']."<br>";
-   echo $row['cargo_persona']."<br>";
-   echo $row['tel_persona']."<br>";
-   echo $row['coment_persona']."<br>";
+  ?>
+    <tr>
+   <td> <?php echo $row['id_persona']?></td>
+   <td> <?php echo $row['nombre_persona']?></td>
+   <td> <?php echo $row['ape_pat']?></td>
+   <td> <?php echo $row['ape_mat']?></td>
+   <td> <?php echo $row['cargo_persona']?></td>
+   <td> <?php echo $row['tel_persona']?></td>
+   <td> <?php echo $row['coment_persona']?></td>
+   </tr>
+   <?php
  }
-}
-?>
+ ?>
+ <!-- Aqui termina la conexion -->
+  </tbody>
+  </div >
 
-      </tbody>
- </div >
- 
     </table>
   </center>
+
+
 <div>
  <div class="contenido">
  	<div class="form_top">
@@ -101,7 +107,6 @@
      </div>
    
     </form>
-
 </div>
 </body>
 </html>
