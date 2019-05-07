@@ -1,13 +1,13 @@
 <?php
 
 $conexion=mysqli_connect("localhost","root","","ibq");
-$id_persona=$_GET['id_persona'];
-$Nombre=$_GET['Nombre'];
-$Apellido_Paterno=$_GET['Apellido_Paterno'];
-$Apellido_Materno=$_GET['Apellido_Materno'];
-$Cargo=$_GET['Cargo'];
-$Telefono=$_GET['Telefono'];
-$Comentarios=$_Get['Comentarios'];
+$id_persona=$_POST['id_persona'];
+$Nombre=$_POST['Nombre'];
+$Apellido_Paterno=$_POST['Apellido_Paterno'];
+$Apellido_Materno=$_POST['Apellido_Materno'];
+$Cargo=$_POST['Cargo'];
+$Telefono=$_POST['Telefono'];
+$Comentarios=$_POST['Comentarios'];
 
 
 
