@@ -1,7 +1,4 @@
-<?php
-$conexion=mysqli_connect("localhost","root","","ibq");
 
-?>
 
 
 <!DOCTYPE html>
@@ -42,7 +39,7 @@ $conexion=mysqli_connect("localhost","root","","ibq");
       <thead font color="black">
       <tr>
         
-        <th colspan="1"  font color = "#000000" ><a href="usuario.html" >Nuevo registro</a></th>
+        <th colspan="1"  font color = "#000000" ><a href="usuario.php" >Nuevo registro</a></th>
           <th colspan="10"> <center>REGISTRO DE USUARIOS</center></th> 
         </tr> 
       
@@ -56,10 +53,10 @@ $conexion=mysqli_connect("localhost","root","","ibq");
           <td>Telefono</td>
           <td>Comentarios</td>
 
-      </tbody>
- </div >
- <?php
-  $slq = "SELECT * FROM persona;";
+<?php
+  $conexion=mysqli_connect("localhost","root","","ibq");
+
+  $slq = "SELECT * FROM `persona`;";
   $result = mysqli_query($conexion, $sql);
   $resultcheck = mysql_num_rows($result);
 
@@ -67,21 +64,20 @@ $conexion=mysqli_connect("localhost","root","","ibq");
   {
   while($mostrar=mysqli_fetch_assoc($result))
   {
-    ?>
-
-    <tr>
-          <td><?php echo $mostrar['id_persona']?></td>
-          <td><?php echo $mostrar['nombre_persona']?></td>
-          <td><?php echo $mostrar['ape_pat']?></td>
-          <td><?php echo $mostrar['ape_mat']?></td>
-          <td><?php echo $mostrar['cargo_persona']?></td>
-          <td><?php echo $mostrar['tel_persona']?></td>
-          <td><?php echo $mostrar['coment_persona']?></td>
-   </tr>
-<?php
+   echo $row['id_persona']."<br>";
+   echo $row['nombre_persona']."<br>";
+   echo $row['ape_pat']."<br>";
+   echo $row['ape_mat']."<br>";
+   echo $row['cargo_persona']."<br>";
+   echo $row['tel_persona']."<br>";
+   echo $row['coment_persona']."<br>";
  }
 }
- ?>
+?>
+
+      </tbody>
+ </div >
+ 
     </table>
   </center>
 <div>
