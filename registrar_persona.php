@@ -1,5 +1,5 @@
 <?php
-$conexion=mysqli_connect("localhost","root","","ibq");
+
 
 $id_persona=$_POST['id_persona'];
 $Nombre=$_POST['Nombre'];
@@ -9,12 +9,15 @@ $Cargo=$_POST['Cargo'];
 $Telefono=$_POST['Telefono'];
 $Comentarios=$_POST['Comentarios'];
 
+$conexion=mysqli_connect("localhost","root","","ibq");
 
-$sql ="INSERT INTO persona(id_persona,nombre_persona,ape_pat,ape_mat,tel_persona,cargo_persona,coment_persona)
+$sql ="INSERT INTO ibq.persona(id_persona,nombre_persona,ape_pat,ape_mat,tel_persona,cargo_persona,coment_persona)
 VALUES('$id_persona','$Nombre','$Apellido_Paterno','$Apellido_Materno','$Cargo','$Telefono','$Comentarios')";
 
-mysqli_query($conn, $sql);
+mysqli_query($sql);
 header("Location: ./usuario.html?registro=hecho!");
+
+mysqli_free_result($sql);
 
 mysqli_close($conexion);
 
