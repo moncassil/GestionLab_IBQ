@@ -59,11 +59,16 @@ $conexion=mysqli_connect("localhost","root","","ibq");
       </tbody>
  </div >
  <?php
-  $slq="SELECT * FROM ibq.persona";
+  $slq = "SELECT * FROM persona;";
   $result = mysqli_query($conexion, $sql);
+  $resultcheck = mysql_num_rows($result);
 
-  while($mostrar=mysqli_fetch_array($result))
+  if($resultcheck > 0)
   {
+  while($mostrar=mysqli_fetch_assoc($result))
+  {
+    ?>
+
     <tr>
           <td><?php echo $mostrar['id_persona']?></td>
           <td><?php echo $mostrar['nombre_persona']?></td>
@@ -75,6 +80,7 @@ $conexion=mysqli_connect("localhost","root","","ibq");
    </tr>
 <?php
  }
+}
  ?>
     </table>
   </center>
