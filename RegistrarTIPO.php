@@ -8,7 +8,7 @@ $Cargo=$_GET['Cargo'];
 $Telefono=$_GET['Telefono'];
 $Comentarios=$_Get['Comentarios'];
 
-$sqlInsertTipo="INSERT INTO tipo_articulo(id_persona,Nombre,Apellido_Paterno,Apellido_Materno,Cargo,Telefono,Comentarios) VALUES($id_persona,$Nombre,$Apellido_Paterno,$Apellido_Materno,$Cargo,$Telefono,$Comentarios)";
+$sqlInsertTipo="INSERT INTO persona(id_persona,nombre_persona,ape_pat,ape_mat,tel_persona,cargo_persona,coment_persona) VALUES($id_persona,$Nombre,$Apellido_Paterno,$Apellido_Materno,$Cargo,$Telefono,$Comentarios)";
 
 if($rs=$conexion->query($sqlInserTipo))
 {
