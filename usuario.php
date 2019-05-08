@@ -14,7 +14,38 @@
 
 	<title>Registro de Usuarios</title>
 </head>
+
+
+
+
+
+
 <body>
+
+
+ <script type="text/javascript">
+  function confirmDelete(id_persona)
+  {
+    var respuesta = confirm('¿Está seguro de eliminar la persona con id '+id_persona+' seleccionado?')
+    if (respuesta == true) 
+    {
+      return true;
+
+    }
+    else
+    {
+      return false;
+
+  }
+    }
+
+</script>
+
+
+
+
+
+
    <!-- Inicio Menu -->
    <div>
    <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -30,6 +61,9 @@
   </li>
 </div>
 <!-- Fin del Menu -->
+
+
+
 
 
 <center>
@@ -56,7 +90,8 @@
 
 
          </tr>
-<!-- Codigo para visualizar datos de mysql a html-->
+
+
 <?php
  $conexion=mysqli_connect("localhost","root","","ibq");
 
@@ -75,35 +110,21 @@
    <td> <?php echo $row['cargo_persona']?></td>
    <td> <?php echo $row['tel_persona']?></td>
    <td> <?php echo $row['coment_persona']?></td>
-   <td> <a href="#" class ="limpiar" onclick= "preguntar(<?php echo $row['id_persona']; ?>)">Eliminar</a>
+   <td> <a href="#" class="limpiar" onclick="confirmDelete(<?php echo $row['id_persona']; ?>)">Eliminar</a></td>
 
    </tr>
    <?php
  }
  ?>
  <!-- Aqui termina la conexion -->
+
   </tbody>
   </div >
 
     </table>
   </center>
-<script type="text/javascript">
 
-  function preguntar(id)
-  {
-    if (confirm('¿Está seguro de eliminar el registro con id '+ id_persona+'?')) 
-    {
-      <?php
-      $conexion=mysqli_connect("localhost","root","","ibq");
-      $sql = "DELETE FROM persona WHERE id_persona = {$id_persona}";
-      $conexion -> query($sql);
-       mysqli_close($conexion);
 
-       ?>
-    }
-
-  }
-</script>
 
 <div>
  <div class="contenido">
