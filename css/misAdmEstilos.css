@@ -148,3 +148,21 @@ div::after
   width: 500px;
   background: green;
 }
+
+/*Estilos de menu*/
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+nav a{
+  text-decoration: none;
+}
+/* para usuarios*/
+nav > ul{}
+nav>ul >li {
+float: left;
+}
+
+
+/*para materiales*/
