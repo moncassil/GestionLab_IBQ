@@ -29,7 +29,7 @@
     var respuesta = confirm('¿Está seguro de eliminar la persona con id '+id_persona+' seleccionado?')
     if (respuesta == true) 
     {
-      return true;
+      window.location.href = "borrar.php?id_persona"+id_persona;
 
     }
     else
@@ -143,7 +143,6 @@
    
      <div class="boton">
      <input class="registrar" type="submit" value="REGISTRAR">
-     <input class="registrar" type="button" value="ELIMINAR">
      <input class="limpiar" type="reset" value="LIMPIAR">
 
      </div>
