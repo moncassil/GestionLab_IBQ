@@ -2,10 +2,18 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<title>Administrador</title>
 	<link rel="stylesheet" href="css/misAdmEstilos.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.js">
+  
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+
+
 </head>
 <body>
 	 <!-- Inicio Menu -->
@@ -45,28 +53,25 @@
 
 
     <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-    <a class="btn btn-secondary" href="usuario.html"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; USUARIOS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a>
+    <a class="btn btn-secondary" href="usuario.php"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; USUARIOS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a>
 </div>
-<div class="btn-group-vertical " role="group" aria-label="Button group with nested dropdown">
-    <a class="btn btn-secondary" href="materiales.html"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MATERIALES &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
 
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+  
 
-</div>
-<nav>
-   <ul>
-    <li><a href="#">usuarios &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-    <li><a href="#">materiales</a>
-       <ul>
-            <li><a href="#">Quimicos</a></li>
-            <li><a href="#">Instrumentos</a></li>
-       </ul>
-    </li>
-    
-  </ul>
-</nav>
-        
-
+  <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MATERIALES &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </button>
+    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+      <a class="dropdown-item" href="Quimicos.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quimicos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+      <a class="dropdown-item" href="instrumentos.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Instrumentos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
     </div>
+  </div>
+</div>
+
+
+</div>
 
 </div>
    

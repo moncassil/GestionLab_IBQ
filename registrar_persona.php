@@ -16,7 +16,7 @@ VALUES('$id_persona','$Nombre','$Apellido_Paterno','$Apellido_Materno','$Cargo',
 
 $rs=$conexion ->query($sql);
 
-header("Location: ./usuario.html?registro=hecho!");
+header("Location: ./usuario.php?registro=hecho!");
 
 mysqli_free_result($sql);
 
