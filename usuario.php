@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,7 +30,8 @@
     var respuesta = confirm('¿Está seguro de eliminar la persona con id '+id_persona+' seleccionado?')
     if (respuesta == true) 
     {
-      window.location.href = "borrar.php?id_persona"+id_persona;
+      window.location.href = "borrar.php?id_persona="+id_persona;
+      
 
     }
     else
@@ -123,7 +125,6 @@
  <!-- Aqui termina la conexion -->
 
   </tbody>
-  </div >
 
     </table>
   </center>
