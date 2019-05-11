@@ -77,7 +77,7 @@
       <tr>
         
         <th colspan="1"  font color = "#000000" >
-          <th colspan="10">LISTA DE PERSONAS</th> 
+          <th colspan="10">LISTA DE PERSONASsss</th> 
         </tr> 
       
       <tbody>
