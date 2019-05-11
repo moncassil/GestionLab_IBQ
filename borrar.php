@@ -3,6 +3,12 @@
       $conexion=mysqli_connect("localhost","root","","ibq");
      header("Location: usuario.php");
 
+
+
+
+
+
+
 // --------------------------------------------  CONSULTA PARA ELIMINAR PERSONA   -------------------------------------------------------------
     $id_persona = $_GET['id_persona'];
 
@@ -21,7 +27,10 @@
 
       mysqli_close($conexion);
 
+
      }
 
      // -----------------------------------AQUI TERMINA LA CONSULTA PARA ELIMINAR PERSONA-----------------------------------------------------
+
+
      die();
