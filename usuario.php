@@ -74,12 +74,8 @@
       <thead font color="black">
       <tr>
         
-<<<<<<< HEAD:usuario.html
-        <th colspan="1"  font color = "#000000" ><a href="usuario.html" >Nuevo registro</a></th>
-=======
-        <th colspan="1"  font color = "#000000" ><a href="usuario.php" >Nuevo registro</a></th>
->>>>>>> rama-papigabriel:usuario.php
-          <th colspan="10"> <center>REGISTRO DE USUARIOS</center></th> 
+          <th colspan="1"  font color = "#000000" >
+          <th colspan="10">LISTA DE PERSONAS</th> 
         </tr> 
       
       <tbody>
