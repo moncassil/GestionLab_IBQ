@@ -12,7 +12,7 @@ $resultado=mysqli_query($conexion, $consulta);
 $filas=mysqli_num_rows($resultado);
 if($filas>0)
 {
-	header("location:Adm.html");
+	header("location:Adm.php");
 }
 else
 {

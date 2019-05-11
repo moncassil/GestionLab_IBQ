@@ -31,6 +31,8 @@
     if (respuesta == true) 
     {
       window.location.href = "borrar.php?id_persona="+id_persona;
+      confirm('Usuario Eliminado correctamente');
+
       
 
     }
@@ -74,8 +76,8 @@
       <thead font color="black">
       <tr>
         
-        <th colspan="1"  font color = "#000000" ><a href="usuario.php" >Nuevo registro</a></th>
-          <th colspan="10"> <center>REGISTRO DE USUARIOS</center></th> 
+        <th colspan="1"  font color = "#000000" >
+          <th colspan="10">LISTA DE PERSONAS</th> 
         </tr> 
       
       <tbody>
@@ -88,9 +90,6 @@
           <td>Telefono</td>
           <td>Comentarios</td>
           <td></td>
-
-
-
          </tr>
 
 
@@ -130,7 +129,7 @@
 <div>
  <div class="contenido">
  	<div class="form_top">
- 		<h2> REGISTROS <span> USUARIOS </span></h2>
+ 		<h2> REGISTRAR <span> PERSONA </span></h2>
     </div>
     <form class="form_reg" action="registrar_persona.php" method="POST">
     
