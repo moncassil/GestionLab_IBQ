@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,10 +30,9 @@
     if (respuesta == true) 
     {
       window.location.href = "borrar.php?id_persona="+id_persona;
-      confirm('Usuario Eliminado correctamente');
-
       
-
+      
+     
     }
     else
     {
@@ -57,7 +55,7 @@
    
 
    <li class="nav-item">
-    <a class="p-1 nav-link disabled" href="Adm.html"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INICIO</a></FONT>
+    <a class="p-1 nav-link disabled" href="Adm.php"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INICIO</a></FONT>
   </li>
     
    <li class="nav-item">
@@ -65,10 +63,6 @@
   </li>
 </div>
 <!-- Fin del Menu -->
-
-
-
-
 
 <center>
 
@@ -131,7 +125,7 @@
  	<div class="form_top">
  		<h2> REGISTRAR <span> PERSONA </span></h2>
     </div>
-    <form class="form_reg" action="registrar_persona.php" method="POST">
+    <form class="form_reg" action="funciones_registrar.php" method="POST">
     
     <input class="input" type="text" placeholder="id persona" name = " id_persona"required  autofocus>
     <input class="input" type="text" placeholder="Nombre" name= "Nombre" required>
