@@ -16,13 +16,13 @@
 <body>
 <!-- Script para eliminar instrumentos -->
   <script type="text/javascript">
-  function confirmDelete(clave_instrum)
+  function confirmDelete($clave_instrum)
   {
-    var respuesta = confirm('¿Está seguro de eliminar el instrumento con id '+clave_instrum+' seleccionado?')
-    if (respuesta == true) 
+    var respuesta = confirm('¿Está seguro de eliminar el instrumento con id '+$clave_instrum+' seleccionado?')
+    if (respuesta !== "respuesta") 
     {
-      window.location.href = "borrar.php?clave_instrum="+clave_instrum;
-      confirm('Usuario Eliminado correctamente');
+      window.location.href = "borrar_ins.php?clave_instrum="+clave_instrum;
+      
 
       
     }
@@ -108,7 +108,7 @@
  	<div class="form_top">
  		<h2> REGISTRO <span> DE INSTRUMENTO </span></h2>
     </div>
-    <form class="form_reg" action="funciones_registrar.php" method="POST">
+    <form class="form_reg" action="registrar_ins.php" method="POST">
     
     <input class="input" type="text" placeholder="clave_instrum" name = "clave_instrum"required  autofocus>
     <input class="input" type="text" placeholder="nom_instrum" name= "nom_instrum" required>

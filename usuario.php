@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,10 +30,9 @@
     if (respuesta == true) 
     {
       window.location.href = "borrar.php?id_persona="+id_persona;
-      confirm('Usuario Eliminado correctamente');
-
       
-
+      
+     
     }
     else
     {
@@ -65,10 +63,6 @@
   </li>
 </div>
 <!-- Fin del Menu -->
-
-
-
-
 
 <center>
 
