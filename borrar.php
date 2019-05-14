@@ -1,33 +1,31 @@
 <?php 
       $conexion=mysqli_connect("localhost","root","","ibq");
     
-
-
 // --------------------------------------------  CONSULTA PARA ELIMINAR PERSONA   -------------------------------------------------------------
-    $id_persona = $_GET['id_persona'];
+   
 
-  if ($id_persona >= 0)
-  {
-    borrarper($id_persona);
-  }
+  borrarper($_GET['id_persona']);
+
+  
 
   function borrarper($id_persona)
 	{
 	 global $conexion;
 
-      $sql = "DELETE FROM persona WHERE id_persona = {$id_persona}";
+      $sql = "DELETE FROM ib.persona WHERE id_persona = '$id_persona'";
       $rs=$conexion ->query($sql);
-
 
       mysqli_close($conexion);
       
-    confirm('Usuario Eliminado correctamente');
 
-     }
+  }
 
-
-
-
-   die();
 
    ?>
+
+   <script type="text/javascript">
+     alert("Persona eliminada correctamente");
+     window.location.href='usuario.php';
+
+
+   </script>

@@ -29,6 +29,7 @@
     var respuesta = confirm('¿Está seguro de eliminar la persona con id '+id_persona+' seleccionado?')
     if (respuesta == true) 
     {
+      
       window.location.href = "borrar.php?id_persona="+id_persona;
       
       
@@ -105,7 +106,7 @@
    <td> <?php echo $row['cargo_persona']?></td>
    <td> <?php echo $row['tel_persona']?></td>
    <td> <?php echo $row['coment_persona']?></td>
-   <td> <a href="#" class="limpiar" onclick="confirmDelete(<?php echo $row['id_persona']; ?>)">Eliminar</a></td>
+   <td> <a href="#" class="limpiar" onclick="confirmDelete('<?php echo $row["id_persona"]; ?>')">Eliminar</a></td>
 
    </tr>
    <?php
