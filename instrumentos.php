@@ -16,10 +16,10 @@
 <body>
 <!-- Script para eliminar instrumentos -->
   <script type="text/javascript">
-  function confirmDelete($clave_instrum)
+  function confirmDelete(clave_instrum)
   {
-    var respuesta = confirm('¿Está seguro de eliminar el instrumento con id '+$clave_instrum+' seleccionado?')
-    if (respuesta !== "respuesta") 
+    var respuesta = confirm('¿Está seguro de eliminar el instrumento con id '+clave_instrum+' seleccionado?')
+    if (respuesta == true) 
     {
       window.location.href = "borrar_ins.php?clave_instrum="+clave_instrum;
       
@@ -89,7 +89,7 @@
          <td> <?php echo $row['num_gaveta']?></td>
          <td> <?php echo $row['cantidad']?></td>
          <td> <?php echo $row['obser_instrum']?></td>
-         <td> <a href="#" class="limpiar" onclick="confirmDelete(<?php echo $row['clave_instrum']; ?>)">Eliminar</a></td>
+         <td> <a href="#" class="limpiar" onclick="confirmDelete('<?php echo $row['clave_instrum']; ?>')">Eliminar</a></td>
 
          </tr>
          <?php
