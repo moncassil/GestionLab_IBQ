@@ -28,8 +28,6 @@
       
       window.location.href = "borrar_per.php?id_persona="+id_persona;
       
-      
-     
     }
     else
     {
@@ -39,8 +37,6 @@
     }
 
 </script>
-
-
 
 
 
