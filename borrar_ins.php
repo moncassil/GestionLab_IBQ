@@ -6,8 +6,6 @@
 
   borrarinstrumento($_GET['clave_instrum']);
 
-  
-
   function borrarinstrumento($clave_instrum)
 	{
 	 global $conexion;
