@@ -16,10 +16,6 @@
 </head>
 
 
-
-
-
-
 <body>
 
 
@@ -30,7 +26,7 @@
     if (respuesta == true) 
     {
       
-      window.location.href = "borrar.php?id_persona="+id_persona;
+      window.location.href = "borrar_per.php?id_persona="+id_persona;
       
       
      
@@ -81,8 +77,8 @@
           <td>Nombre </td>
           <td>Apellido Paterno</td>
           <td>Apellido Materno</td>
+          <td>Telefono </td>
           <td>Cargo</td>
-          <td>Telefono</td>
           <td>Comentarios</td>
           <td></td>
          </tr>
@@ -126,7 +122,7 @@
  	<div class="form_top">
  		<h2> REGISTRAR <span> PERSONA </span></h2>
     </div>
-    <form class="form_reg" action="funciones_registrar.php" method="POST">
+    <form class="form_reg" action="registrar_per.php" method="POST">
     
     <input class="input" type="text" placeholder="id persona" name = " id_persona"required  autofocus>
     <input class="input" type="text" placeholder="Nombre" name= "Nombre" required>

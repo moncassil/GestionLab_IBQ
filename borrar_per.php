@@ -1,5 +1,5 @@
 <?php 
-      $conexion=mysqli_connect("localhost","root","","ibq");
+     $conexion=mysqli_connect("localhost","root","","ibq");
     
 // --------------------------------------------  CONSULTA PARA ELIMINAR PERSONA   -------------------------------------------------------------
    
@@ -11,10 +11,11 @@
   function borrarper($id_persona)
 	{
 	 global $conexion;
+  
 
-      $sql = "DELETE FROM ib.persona WHERE id_persona = '$id_persona'";
+      $sql = "DELETE FROM ibq.persona WHERE id_persona = '$id_persona'";
       $rs=$conexion ->query($sql);
-
+    var_dump("$sql");
       mysqli_close($conexion);
       
 
