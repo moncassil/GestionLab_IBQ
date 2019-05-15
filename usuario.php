@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/login.css">
   <link rel="stylesheet" href="css/misEstilos.css">
-  <link rel="icon" type="image/jpg" href="imagenesIBQ/ibq.jpg">
+  <link rel="icon" type="image/x-icon" href="imagenesIBQ/pagina.ico">
 
 	<title>Registro de Usuarios</title>
 </head>

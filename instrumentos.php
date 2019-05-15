@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/login.css">
   <link rel="stylesheet" href="css/misEstilos.css">
+  <link rel="icon" type="image/x-icon" href="imagenesIBQ/pagina.ico">
 
 
 	<title>REGISTRO DE INSTRUMENTOS </title>
