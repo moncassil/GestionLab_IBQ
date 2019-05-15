@@ -42,10 +42,17 @@
    <div>
    <nav class="navbar navbar-expand-lg navbar-light bg-light">
    <ul class="nav">
-   
 
    <li class="nav-item">
     <a class="p-1 nav-link disabled" href="Adm.php"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INICIO</a></FONT>
+  </li>
+
+   <li class="nav-item">
+    <a class=" p-1 nav-link disabled active" href="usuario.php"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;USUARIOS</a></FONT>
+  </li>
+
+    <li class="nav-item">
+    <a class=" p-1 nav-link disabled active" href="quimicos.php"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QUÍMICOS</a></FONT>
   </li>
     
    <li class="nav-item">
@@ -106,7 +113,7 @@
 <div>
  <div class="contenido">
  	<div class="form_top">
- 		<h2> REGISTRO <span> DE INSTRUMENTO </span></h2>
+ 		<h2> REGISTRO DE<span> INSTRUMENTO </span></h2>
     </div>
     <form class="form_reg" action="registrar_ins.php" method="POST">
     
