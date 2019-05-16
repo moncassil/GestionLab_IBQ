@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
-  <title>Login_IBQ</title>
+  <title>Login</title>
   <link rel="stylesheet" href="css/misEstilos.css">
   <link rel="icon" type="image/x-icon" href="imagenesIBQ/pagina.ico">
 <script type="text/javascript">
@@ -16,11 +16,17 @@
  <div class="login-box">
       <img src="imagenesIBQ/ibq.jpg" class="avatar" alt="Avatar Image">
       <h1>ACCESO</h1>
-      <form action="validar.php"  method="POST">
+      <form action=""  method="POST">
         <!-- USERNAME INPUT -->
+        <?php
+          if(isset($errorLogin))
+          {
+            echo "errorLogin";
+          }
 
+        ?>
         <label for="username">Usuario</label>
-        <input type="text" placeholder="Enter Usuario" name="usuario" required="yes">
+        <input type="text" placeholder="Enter Usuario" name="username" required="yes">
         
         <!-- PASSWORD INPUT -->
         <label for="password">Contraseña</label>
