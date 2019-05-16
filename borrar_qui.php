@@ -4,14 +4,14 @@
 // --------------------------------------------  CONSULTA PARA ELIMINAR INSTRUMENTOS  --------------------------------------------------
    
 
-  borrarinstrumento($_GET['clave_instrum']);
+  borrarquimico($_GET['clave_quim']);
 
-  function borrarinstrumento($clave_instrum)
+  function borrarquimico($clave_quim)
 	{
 	 global $conexion;
   
 
-      $sql = "DELETE FROM ibq.instrumento WHERE clave_instrum = '$clave_instrum'";
+      $sql = "DELETE FROM ibq.quimicos WHERE clave_quim = '$clave_quim'";
       $rs=$conexion ->query($sql);
     var_dump("$sql");
       mysqli_close($conexion);
@@ -24,7 +24,7 @@
 
    <script type="text/javascript">
      alert("Instrumento eliminado correctamente");
-     window.location.href='instrumentos.php';
+     window.location.href='quimicos.php';
 
 
    </script>

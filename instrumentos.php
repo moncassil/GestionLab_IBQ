@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/login.css">
   <link rel="stylesheet" href="css/misEstilos.css">
+  <link rel="icon" type="image/x-icon" href="imagenesIBQ/pagina.ico">
 
 
 	<title>REGISTRO DE INSTRUMENTOS </title>
@@ -16,10 +17,10 @@
 <body>
 <!-- Script para eliminar instrumentos -->
   <script type="text/javascript">
-  function confirmDelete($clave_instrum)
+  function confirmDelete(clave_instrum)
   {
-    var respuesta = confirm('¿Está seguro de eliminar el instrumento con id '+$clave_instrum+' seleccionado?')
-    if (respuesta !== "respuesta") 
+    var respuesta = confirm('¿Está seguro de eliminar el instrumento con id '+clave_instrum+' seleccionado?')
+    if (respuesta == true) 
     {
       window.location.href = "borrar_ins.php?clave_instrum="+clave_instrum;
       
@@ -42,10 +43,17 @@
    <div>
    <nav class="navbar navbar-expand-lg navbar-light bg-light">
    <ul class="nav">
-   
 
    <li class="nav-item">
     <a class="p-1 nav-link disabled" href="Adm.php"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INICIO</a></FONT>
+  </li>
+
+   <li class="nav-item">
+    <a class=" p-1 nav-link disabled active" href="usuario.php"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;USUARIOS</a></FONT>
+  </li>
+
+    <li class="nav-item">
+    <a class=" p-1 nav-link disabled active" href="quimicos.php"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QUÍMICOS</a></FONT>
   </li>
     
    <li class="nav-item">
@@ -89,7 +97,7 @@
          <td> <?php echo $row['num_gaveta']?></td>
          <td> <?php echo $row['cantidad']?></td>
          <td> <?php echo $row['obser_instrum']?></td>
-         <td> <a href="#" class="limpiar" onclick="confirmDelete(<?php echo $row['clave_instrum']; ?>)">Eliminar</a></td>
+         <td> <a href="#" class="limpiar" onclick="confirmDelete('<?php echo $row['clave_instrum']; ?>')">Eliminar</a></td>
 
          </tr>
          <?php
@@ -106,7 +114,7 @@
 <div>
  <div class="contenido">
  	<div class="form_top">
- 		<h2> REGISTRO <span> DE INSTRUMENTO </span></h2>
+ 		<h2> REGISTRO DE<span> INSTRUMENTO </span></h2>
     </div>
     <form class="form_reg" action="registrar_ins.php" method="POST">
     

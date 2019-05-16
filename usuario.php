@@ -5,19 +5,15 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content=" width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="formulario.css">
+	<link rel="stylesheet" type="text/css" href="formulario.css">
 	<link rel="stylesheet" href="estilotablas.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/login.css">
   <link rel="stylesheet" href="css/misEstilos.css">
-
+  <link rel="icon" type="image/x-icon" href="imagenesIBQ/pagina.ico">
 
 	<title>Registro de Usuarios</title>
 </head>
-
-
-
-
 
 
 <body>
@@ -26,13 +22,12 @@
  <script type="text/javascript">
   function confirmDelete(id_persona)
   {
-    var respuesta = confirm('¿Está seguro de eliminar la persona con id '+id_persona+' seleccionado?')
+    var respuesta = confirm('¿Está seguro de eliminar la persona con "ID '+id_persona+'" seleccionado?')
     if (respuesta == true) 
     {
-      window.location.href = "borrar.php?id_persona="+id_persona;
       
+      window.location.href = "borrar_per.php?id_persona="+id_persona;
       
-     
     }
     else
     {
@@ -42,8 +37,6 @@
     }
 
 </script>
-
-
 
 
 
@@ -58,6 +51,14 @@
     <a class="p-1 nav-link disabled" href="Adm.php"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INICIO</a></FONT>
   </li>
     
+    <li class="nav-item">
+    <a class=" p-1 nav-link disabled active" href="quimicos.php"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QUÍMICOS</a></FONT>
+  </li>
+
+    <li class="nav-item">
+    <a class=" p-1 nav-link disabled active" href="instrumentos.php"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INSTRUMENTOS</a></FONT>
+  </li>
+
    <li class="nav-item">
     <a class=" p-1 nav-link disabled active">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SISTEMA ELECTRÓNICO PARA EL CONTROL DE REACTIVOS Y MATERIALES EN LABORATORIOS</a>
   </li>
@@ -80,8 +81,8 @@
           <td>Nombre </td>
           <td>Apellido Paterno</td>
           <td>Apellido Materno</td>
+          <td>Telefono </td>
           <td>Cargo</td>
-          <td>Telefono</td>
           <td>Comentarios</td>
           <td></td>
          </tr>
@@ -105,7 +106,7 @@
    <td> <?php echo $row['cargo_persona']?></td>
    <td> <?php echo $row['tel_persona']?></td>
    <td> <?php echo $row['coment_persona']?></td>
-   <td> <a href="#" class="limpiar" onclick="confirmDelete(<?php echo $row['id_persona']; ?>)">Eliminar</a></td>
+   <td> <a href="#" class="limpiar" onclick="confirmDelete('<?php echo $row["id_persona"]; ?>')">Eliminar</a></td>
 
    </tr>
    <?php
@@ -125,7 +126,7 @@
  	<div class="form_top">
  		<h2> REGISTRAR <span> PERSONA </span></h2>
     </div>
-    <form class="form_reg" action="funciones_registrar.php" method="POST">
+    <form class="form_reg" action="registrar_per.php" method="POST">
     
     <input class="input" type="text" placeholder="id persona" name = " id_persona"required  autofocus>
     <input class="input" type="text" placeholder="Nombre" name= "Nombre" required>

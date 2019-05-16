@@ -24,7 +24,7 @@
 
 	$rs=$conexion ->query($sql);
 
-	header("Location: usuario.php?registro=hecho!");
+	
 	mysqli_free_result($sql);
 
 	mysqli_close($conexion);
@@ -32,8 +32,12 @@
 // --------------------------------Aqui termina Agregar persona ---------------------------------------------------------------
 
 
-
-
-exit();
-
 ?>
+
+
+   <script type="text/javascript">
+     alert("Persona agregada correctamente");
+     window.location.href='usuario.php';
+
+
+   </script>
