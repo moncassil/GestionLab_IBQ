@@ -4,18 +4,19 @@
 
     if ($varsesion == null || $varsesion = '') 
     {
-      echo"<SCRIPT language= JavaScript > alert('No tienes autorización');
+     echo"<SCRIPT language= JavaScript > alert('No tienes autorización');
           window.location.href='index.php'; </script>";
       die();
     }
 
 ?>
 
+
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content=" width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="formulario.css">
 	<link rel="stylesheet" href="estilotablas.css">
   <link rel="stylesheet" href="css/bootstrap.css">
@@ -23,21 +24,17 @@
   <link rel="stylesheet" href="css/misEstilos.css">
   <link rel="icon" type="image/x-icon" href="imagenesIBQ/pagina.ico">
 
-	<title>Registro de Usuarios</title>
+	<title>REGISTRO DE QUIMICOS</title>
 </head>
 
-
-<body>
-
-
- <script type="text/javascript">
-  function confirmDelete(id_persona)
+  <script type="text/javascript">
+  function confirmDelete(clave_quim)
   {
-    var respuesta = confirm('¿Está seguro de eliminar la persona con "ID '+id_persona+'" seleccionado?')
+    var respuesta = confirm('¿Está seguro de eliminar el Químico con "id '+clave_quim+'" seleccionado?')
     if (respuesta == true) 
     {
       
-      window.location.href = "borrar_per.php?id_persona="+id_persona;
+      window.location.href = "borrar_qui.php?clave_quim="+clave_quim;
       
     }
     else
@@ -51,8 +48,8 @@
 
 
 
-
-   <!-- Inicio Menu -->
+<body>
+   <!-- Inicio de franja gris superior -->
    <div>
    <nav class="navbar navbar-expand-lg navbar-light bg-light">
    <ul class="nav">
@@ -60,16 +57,17 @@
 
    <li class="nav-item">
     <a class="p-1 nav-link disabled" href="Adm.php"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INICIO</a></FONT>
+
   </li>
     
-    <li class="nav-item">
-    <a class=" p-1 nav-link disabled active" href="quimicos.php"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QUÍMICOS</a></FONT>
+  <li class="nav-item">
+    <a class=" p-1 nav-link disabled active" href="usuario.php"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;USUARIOS</a></FONT>
   </li>
 
     <li class="nav-item">
     <a class=" p-1 nav-link disabled active" href="instrumentos.php"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INSTRUMENTOS</a></FONT>
   </li>
-
+    
    <li class="nav-item">
     <a class=" p-1 nav-link disabled active">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SISTEMA ELECTRÓNICO PARA EL CONTROL DE REACTIVOS Y MATERIALES EN LABORATORIOS</a>
   </li>
@@ -77,36 +75,36 @@
     <li class="nav-item">
     <a class="p-1 nav-link disabled" href="cerrar_sesion.php"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CERRAR SESION</a></FONT>
   </li>
+
 </div>
-<!-- Fin del Menu -->
+<!-- Fin de franja gris superior -->
 
+<!-- Creacion de formulario -->
 <center>
-
     <table >
       <thead font color="black">
       <tr>
         
         <th colspan="1"  font color = "#000000" >
-          <th colspan="10">LISTA DE PERSONAS</th> 
+          <th colspan="10"> <center>LISTA DE QUÍMICOS</center></th> 
         </tr> 
       
       <tbody>
         <tr>
-          <td>id persona</td>
-          <td>Nombre </td>
-          <td>Apellido Paterno</td>
-          <td>Apellido Materno</td>
-          <td>Telefono </td>
-          <td>Cargo</td>
-          <td>Comentarios</td>
+          <td>Almacen</td>
+          <td>Clave Químico</td>
+          <td>Nombre</td>
+          <td>Gaveta</td>
+          <td>Cantidad</td>
+          <td>Gramaje Total</td>
+          <td>Observaciones</td>
           <td></td>
-         </tr>
+        </tr>
 
-
-<?php
+        <?php
  $conexion=mysqli_connect("localhost","root","","ibq");
 
-  $consulta="SELECT * FROM persona";
+  $consulta="SELECT * FROM quimicos";
   $resultado = mysqli_query($conexion, $consulta);
   $resultcheck = mysqli_num_rows($resultado);
 
@@ -114,50 +112,50 @@
   {
   ?>
     <tr>
-   <td> <?php echo $row['id_persona']?></td>
-   <td> <?php echo $row['nombre_persona']?></td>
-   <td> <?php echo $row['ape_pat']?></td>
-   <td> <?php echo $row['ape_mat']?></td>
-   <td> <?php echo $row['cargo_persona']?></td>
-   <td> <?php echo $row['tel_persona']?></td>
-   <td> <?php echo $row['coment_persona']?></td>
-   <td> <a href="#" class="limpiar" onclick="confirmDelete('<?php echo $row["id_persona"]; ?>')">Eliminar</a></td>
+   <td> <?php echo $row['id_almacen']?></td>
+   <td> <?php echo $row['clave_quim']?></td>
+   <td> <?php echo $row['nombre_quim']?></td>
+   <td> <?php echo $row['num_gaveta_quim']?></td>
+   <td> <?php echo $row['tipo_cant']?></td>
+   <td> <?php echo $row['gramaje']?></td>
+   <td> <?php echo $row['obs_quim']?></td>
+   <td> <a href="#" class="limpiar" onclick="confirmDelete('<?php echo $row["clave_quim"]; ?>')">Eliminar</a></td>
 
    </tr>
    <?php
  }
  ?>
- <!-- Aqui termina la conexion -->
 
-  </tbody>
 
+
+      </tbody>
+ </div >
+
+ 
     </table>
   </center>
-
-
-
 <div>
  <div class="contenido">
  	<div class="form_top">
- 		<h2> REGISTRAR <span> PERSONA </span></h2>
+ 		<h2> REGISTROS DE <span> QUÍMICOS </span></h2>
     </div>
-    <form class="form_reg" action="registrar_per.php" method="POST">
-    
-    <input class="input" type="text" placeholder="id persona" name = " id_persona"required  autofocus>
-    <input class="input" type="text" placeholder="Nombre" name= "Nombre" required>
-    <input class="input" type="tel"  placeholder="Apellido Paterno" name= "Apellido_Paterno" required>
-    <input class="input" type="tex"  placeholder="Apellido Materno" name= "Apellido_Materno" required>
-    <input class="input" type="text" placeholder="Cargo" name= "Cargo" required >
-    <input class="input" type="text" placeholder="Telefono" name="Telefono" required>
-    <input class="input" type="text" placeholder="Comentarios" name= "Comentarios" required>
-   
+    <form class="form_reg" action="registrar_qui.php" method="POST">
+    <input class="input" type="text" placeholder="id_almacen" name = "id_almacen"required  autofocus>
+    <input class="input" type="text" placeholder="clave_quim" name = " clave_quim"required  autofocus>
+    <input class="input" type="text" placeholder="num_gaveta_quim" name= "num_gaveta_quim" required>
+    <input class="input" type="tel"  placeholder="nombre_quim" name= "nombre_quim" required>
+    <input class="input" type="tex"  placeholder="tipo_cant" name= "tipo_cant" required>
+    <input class="input" type="text" placeholder="gramaje" name= "gramaje" required >
+    <input class="input" type="text" placeholder="obs_quim" name= "obs_quim" required >
+
      <div class="boton">
      <input class="registrar" type="submit" value="REGISTRAR">
      <input class="limpiar" type="reset" value="LIMPIAR">
-
      </div>
    
     </form>
+
 </div>
 </body>
 </html>
+
