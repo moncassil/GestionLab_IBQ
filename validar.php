@@ -19,6 +19,8 @@ else
 {
 echo"<SCRIPT language= JavaScript > alert('Usuario o contraseña incorrecta');
 window.location.href='index.php'; </script>";
+
+die();
 }
 
 mysqli_free_result($resultado);
