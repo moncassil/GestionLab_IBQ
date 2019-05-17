@@ -16,7 +16,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content=" width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="formulario.css">
 	<link rel="stylesheet" href="estilotablas.css">
   <link rel="stylesheet" href="css/bootstrap.css">
@@ -91,6 +91,7 @@
       
       <tbody>
         <tr>
+          <td>Almacen</td>
           <td>Clave Químico</td>
           <td>Nombre</td>
           <td>Gaveta</td>
@@ -111,6 +112,7 @@
   {
   ?>
     <tr>
+   <td> <?php echo $row['id_almacen']?></td>
    <td> <?php echo $row['clave_quim']?></td>
    <td> <?php echo $row['nombre_quim']?></td>
    <td> <?php echo $row['num_gaveta_quim']?></td>
@@ -138,7 +140,7 @@
  		<h2> REGISTROS DE <span> QUÍMICOS </span></h2>
     </div>
     <form class="form_reg" action="registrar_qui.php" method="POST">
-    
+    <input class="input" type="text" placeholder="id_almacen" name = "id_almacen"required  autofocus>
     <input class="input" type="text" placeholder="clave_quim" name = " clave_quim"required  autofocus>
     <input class="input" type="text" placeholder="num_gaveta_quim" name= "num_gaveta_quim" required>
     <input class="input" type="tel"  placeholder="nombre_quim" name= "nombre_quim" required>

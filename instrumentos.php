@@ -91,6 +91,7 @@
       
       <tbody>
         <tr>
+          <td>Almacen</td>
           <td>Clave</td>
           <td>Nombre</td>
           <td>Número gaveta</td>
@@ -109,6 +110,7 @@
         {
         ?>
         <tr>
+         <td> <?php echo $row['id_almacen']?></td>
          <td> <?php echo $row['clave_instrum']?></td>
          <td> <?php echo $row['nom_instrum']?></td>
          <td> <?php echo $row['num_gaveta']?></td>
