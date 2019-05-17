@@ -1,6 +1,6 @@
 <?php
-
-$usuario=$_POST['usuario'];
+session_start();
+$usuario=$_POST['username'];
 $password=$_POST['password'];
 
 //conectar a la bd 
@@ -12,11 +12,13 @@ $resultado=mysqli_query($conexion, $consulta);
 $filas=mysqli_num_rows($resultado);
 if($filas>0)
 {
+	$_SESSION['usuario'] = $usuario;
 	header("location:Adm.php");
 }
 else
 {
-echo "error en la autenticidad";
+echo"<SCRIPT language= JavaScript > alert('Usuario o contraseña incorrecta');
+window.location.href='index.php'; </script>";
 }
 
 mysqli_free_result($resultado);

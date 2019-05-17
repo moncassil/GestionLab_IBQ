@@ -1,3 +1,15 @@
+<?php
+    session_start();
+    $varsesion = $_SESSION['usuario'];
+
+    if ($varsesion == null || $varsesion = '') 
+    {
+      echo 'No tienes autorización';
+      die();
+    }
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,12 +29,15 @@
 </head>
 <body>
    <!-- Inicio Menu -->
-   
+   <H2>Bienvenido: <?php echo $_SESSION['usuario']?></H2>
    <nav class="navbar navbar-expand-lg navbar-light bg-light">
    <ul class="nav">
     
   <li class="nav-item">
-    <a class="p-1 nav-link disabled" href="index.php"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INICIO</a></FONT>
+    <a class="p-1 nav-link disabled" href="index.php"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INICIO</a></FONT>
+  </li>
+  <li class="nav-item">
+    <a class="p-1 nav-link disabled" href="cerrar_sesion.php"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CERRAR SESION</a></FONT>
   </li>
 
  <li class="nav-item">

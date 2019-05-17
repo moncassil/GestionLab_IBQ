@@ -1,40 +1,47 @@
-<?php
- 
-  include_once('user.php');
-  include_once('user_session.php');
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <title>Login</title>
+  <link rel="stylesheet" href="css/misEstilos.css">
+  <link rel="icon" type="image/x-icon" href="imagenesIBQ/pagina.ico">
+<script type="text/javascript">
+</script>
 
-$userSession = new UserSession();
-$user = new User();
 
-  if(isset($_SESSION['user']))
-  {
-    echo "hay sesion";
-  }
-  else if (isset($_POST['username']) && isset($_POST['password'])) 
-  {
-    //echo "validacion de login";
-    $userForm = $_POST['username'];
-    $passForm = $_POST['password'];
-    if($user -> userExists($userForm, $passForm))
-    {
-      echo "Usuario Validado";
-      $userSession->setCurrentUser($userForm);
-      $user->setUser($userForm);
-      var_dump("$userSession");
-      include_once('Adm.php');
+</head>
+<body>
+	
+ <div class="login-box">
+      <img src="imagenesIBQ/ibq.jpg" class="avatar" alt="Avatar Image">
+      <h1>ACCESO</h1>
+      <form action="validar.php"  method="POST">
+        <!-- USERNAME INPUT -->
+        
+        <label for="username">Usuario</label>
+        <input type="text" placeholder="Enter Usuario" name="username" required="yes">
+        
+        <!-- PASSWORD INPUT -->
+        <label for="password">Contraseña</label>
+        <input type="password" placeholder="Enter Contraseña" name="password" required="yes">
+        <input type="submit" value="Iniciar sesión">
+        <a href="olvidandoContrasena.html">Olvidaste tu contraseña?</a><br>
+     </form>
+ </div>
+  
+  <!--Inicio de pie pag-->
+     </div>
+        <div class="footer">
+          <FONT FACE="courier" SIZE=3 COLOR="#4B4A48">
+             
+ITA - ALGUNOS DERECHOS RESERVADOS © 2019 
+Avd. Instituto Tecnológico s/n Crucero del Cayaco C.P. 39905 
+E-mail de contacto: it.acapulco@hotmail.com, Teléfonos (744) 442-9010 al 19.
+          </FONT>
+        </div>
+        <!-- Fin del pie de pag-->
 
-    }
 
-    else
-    {
-      $errorLogin = "Nombre de usuario y/o contraseña son incorrectos";
-
-    }
-  }
-  else
-  {
-    echo "Login";
-    include_once('login.php');
-  }
-
-  ?>
+</body>
+</html>
