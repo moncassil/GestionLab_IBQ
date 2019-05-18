@@ -20,45 +20,33 @@
 	<link rel="stylesheet" href="estilotablas.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/login.css">
-  <link rel="stylesheet" href="css/misEstilosReUsuarios.css">
+  <link rel="stylesheet" href="css/misAdmEstilos.css">
   <link rel="icon" type="image/x-icon" href="imagenesIBQ/pagina.ico">
-
-
 	<title>Registro de Usuarios</title>
 </head>
 
-
 <body>
-
-
  <script type="text/javascript">
   function confirmDelete(id_persona)
   {
     var respuesta = confirm('¿Está seguro de eliminar la persona con "ID '+id_persona+'" seleccionado?')
     if (respuesta == true) 
     {
-      
-      window.location.href = "borrar_per.php?id_persona="+id_persona;
-      
+      window.location.href = "borrar_per.php?id_persona="+id_persona;  
     }
     else
     {
       return false;
-
   }
     }
 
 </script>
 
-
-
-
    <!-- Inicio Menu -->
    <div>
    <nav class="navbar navbar-expand-lg navbar-light bg-light">
    <ul class="nav">
-   
-
+  
    <li class="nav-item">
     <a class="p-1 nav-link disabled" href="Adm.php"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INICIO</a></FONT>
   </li>
@@ -82,7 +70,6 @@
 <!-- Fin del Menu -->
 
 <center>
-
     <table >
       <thead font color="black">
       <tr>

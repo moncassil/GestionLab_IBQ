@@ -2,9 +2,9 @@ table{
 	background-color: white;
 	text-align: center;
 	border-collapse: collapse;
-	width: 50%;
+	width: 60%;
 	position: absolute;
-    top: 200px;
+    top: 135px;
     left: 500px;
 }
 th, td{

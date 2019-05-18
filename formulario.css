@@ -14,10 +14,10 @@ body{
  height: auto;
  background-color: #EFEFEF;
  margin: 3% ;
- padding-bottom: 1rem; /*tamano de letras dentro de los cuadros del formulario*/
+ padding-bottom: 1rem; /* largo hacia abajo del formulario*/
 }
 .form_top {
-	width: 100%; /*franja naranja superior*/
+	width: 100%; /*lago de la franja naranja superior*/
 	text-align: center;
 	padding: 2rem 0 1rem;
 	border-top: solid .4rem #F39B53;

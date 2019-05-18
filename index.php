@@ -4,14 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
   <title>Login</title>
-  <link rel="stylesheet" href="css/misEstilos.css">
+  <link rel="stylesheet" href="css/misIndexEstilos.css">
   <link rel="icon" type="image/x-icon" href="imagenesIBQ/pagina.ico">
+  <link rel="stylesheet" href="css/bootstrap.css">
 <script type="text/javascript">
 </script>
 
 
 </head>
 <body>
+   <div>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <ul class="nav">
+    <li class="nav-item">
+    <a class=" p-1 nav-link disabled active">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SISTEMA ELECTRÓNICO PARA EL CONTROL DE REACTIVOS Y MATERIALES EN LABORATORIOS</a>
+  </li>
+</div>
 	
  <div class="login-box">
       <img src="imagenesIBQ/ibq.jpg" class="avatar" alt="Avatar Image">
