@@ -20,8 +20,9 @@
 	<link rel="stylesheet" href="estilotablas.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/login.css">
-  <link rel="stylesheet" href="css/misEstilos.css">
+  <link rel="stylesheet" href="css/misEstilosReUsuarios.css">
   <link rel="icon" type="image/x-icon" href="imagenesIBQ/pagina.ico">
+
 
 	<title>Registro de Usuarios</title>
 </head>
@@ -63,19 +64,19 @@
   </li>
     
     <li class="nav-item">
-    <a class=" p-1 nav-link disabled active" href="quimicos.php"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QUÍMICOS</a></FONT>
+    <a class=" p-1 nav-link disabled active" href="quimicos.php"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QUÍMICOS</a></FONT>
   </li>
 
     <li class="nav-item">
-    <a class=" p-1 nav-link disabled active" href="instrumentos.php"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INSTRUMENTOS</a></FONT>
+    <a class=" p-1 nav-link disabled active" href="instrumentos.php"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INSTRUMENTOS</a></FONT>
   </li>
 
    <li class="nav-item">
-    <a class=" p-1 nav-link disabled active">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SISTEMA ELECTRÓNICO PARA EL CONTROL DE REACTIVOS Y MATERIALES EN LABORATORIOS</a>
+    <a class=" p-1 nav-link disabled active">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SISTEMA ELECTRÓNICO PARA EL CONTROL DE REACTIVOS Y MATERIALES EN LABORATORIOS</a>
   </li>
 
     <li class="nav-item">
-    <a class="p-1 nav-link disabled" href="cerrar_sesion.php"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CERRAR SESION</a></FONT>
+    <a class="p-1 nav-link disabled" href="cerrar_sesion.php"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CERRAR SESION</a></FONT>
   </li>
 </div>
 <!-- Fin del Menu -->
@@ -85,11 +86,7 @@
     <table >
       <thead font color="black">
       <tr>
-        
-        <th colspan="1"  font color = "#000000" >
           <th colspan="10">LISTA DE PERSONAS</th> 
-        </tr> 
-      
       <tbody>
         <tr>
           <td>id persona</td>
@@ -98,11 +95,8 @@
           <td>Apellido Materno</td>
           <td>Telefono </td>
           <td>Cargo</td>
-          <td>Comentarios</td>
-          <td></td>
+          <td>Comentarios</td>      
          </tr>
-
-
 <?php
  $conexion=mysqli_connect("localhost","root","","ibq");
 
@@ -142,7 +136,7 @@
  		<h2> REGISTRAR <span> PERSONA </span></h2>
     </div>
     <form class="form_reg" action="registrar_per.php" method="POST">
-    
+  
     <input class="input" type="text" placeholder="id persona" name = " id_persona"required  autofocus>
     <input class="input" type="text" placeholder="Nombre" name= "Nombre" required>
     <input class="input" type="tel"  placeholder="Apellido Paterno" name= "Apellido_Paterno" required>

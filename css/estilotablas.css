@@ -1,0 +1,29 @@
+table{
+	background-color: white;
+	text-align: center;
+	border-collapse: collapse;
+	width: 50%;
+	position: absolute;
+    top: 200px;
+    left: 500px;
+}
+th, td{
+	border: solid 1px black;
+	padding: 10px;
+}
+
+thead{
+	background-color:  orange;
+	color: white;
+    width: 100s%;
+	position: absolute;
+    top: -45px;
+    left: 0px;
+}
+tr:nth-child(even){
+	background-color: #ddd;
+}
+tr:hover td{
+	background-color: #EB8437;
+	color: white;
+}

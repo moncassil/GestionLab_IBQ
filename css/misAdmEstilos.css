@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url(../imagenesIBQ/adm3.jpg) no-repeat center top;
+  background: url(../imagenesIBQ/fondogris.jpg) no-repeat center top;
   background-size: cover;
   font-family: sans-serif;
   height: 100vh;
@@ -124,20 +124,16 @@ div::after
 
 
 
-
+/* Inicio de estilos para el pie de pag*/
 .footer{
-	background-color: #D2BF79;
-	width: 100%;
-	height:30px;
-	bottom: 0;
+	background-color: #ffffff; /*color de la franja*/
+	width: 205; /* dimensiones de la franja*/
+	height:48px; /* dimensiones de la franja*/
+	bottom: 0; /*ayuda a que el pie este en la parte inferior de la pag*/
 	position: fixed;
-	text-align: center;
+	text-align: center; /* Texto centrado*/
 	color: #000;
 }
-
-
-
-
 
 #miParrafo{
   width: 200px;
