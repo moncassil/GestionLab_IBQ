@@ -1,6 +1,7 @@
 <?php
     session_start();
     $varsesion = $_SESSION['usuario'];
+    
 
     if ($varsesion == null || $varsesion = '') 
     {
@@ -28,7 +29,7 @@
 <body>
 
    <!-- Inicio de barra superior de la pag -->
-   <H2>Bienvenido: <?php echo $_SESSION['usuario']?></H2>
+
    <nav class="navbar navbar-expand-lg navbar-light bg-light">
    <ul class="nav">
     
@@ -38,6 +39,7 @@
   
 
  <li class="nav-item">
+  
 
     <a class=" p-1 nav-link disabled active">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SISTEMA ELECTRÓNICO PARA EL CONTROL DE REACTIVOS Y MATERIALES EN LABORATORIOS</a>
 
@@ -54,6 +56,10 @@
   <div class="contenedorContenido">
   <div class="centrado" >
   <h3 font color="black" face="arial">
+    <H2>Bienvenido(a) </H2>
+     <H2><?php echo $_SESSION['usuario']?></H2>
+
+    
 
 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
 
