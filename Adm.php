@@ -5,8 +5,7 @@
 
     if ($varsesion == null || $varsesion = '') 
     {
-      echo"<SCRIPT language= JavaScript > alert('No tienes autorización');
-          window.location.href='index.php'; </script>";
+      echo"<SCRIPT language= JavaScript >window.location.href='index.php'; </script>";
       die();
     }
 
