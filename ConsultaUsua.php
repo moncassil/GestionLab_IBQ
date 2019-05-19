@@ -12,20 +12,6 @@
 ?>
 
 <!DOCTYPE html>
-<?php
-    session_start();
-    $varsesion = $_SESSION['usuario'];
-
-    if ($varsesion == null || $varsesion = '') 
-    {
-      echo"<SCRIPT language= JavaScript > alert('No tienes autorización');
-          window.location.href='index.php'; </script>";
-      die();
-    }
-
-?>
-
-<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
