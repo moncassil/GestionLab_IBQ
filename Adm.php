@@ -32,11 +32,6 @@
    <nav class="navbar navbar-expand-lg navbar-light bg-light">
    <ul class="nav">
     
-  <li class="nav-item">
-    <a class="p-1 nav-link disabled" href="index.php"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INICIO</a></FONT>
-  </li>
-  
-
  <li class="nav-item">
   
 
