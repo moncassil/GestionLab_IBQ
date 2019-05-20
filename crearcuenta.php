@@ -13,12 +13,12 @@
 
 <body>
  <script type="text/javascript">
-  function confirmDelete(id_persona)
+  function confirmDelete(usuario)
   {
-    var respuesta = confirm('¿Está seguro de eliminar la cuenta con "ID '+id_persona+'" seleccionado?')
+    var respuesta = confirm('¿Está seguro de eliminar la cuenta con "ID '+usuario+'" seleccionado?')
     if (respuesta == true) 
     {
-      window.location.href = "borrar_per.php?id_persona="+id_persona;  
+      window.location.href = "borrar_usu.php?id_persona="+usuario;  
     }
     else
     {
@@ -64,12 +64,13 @@
         <tr>
           <td>Usuario</td>
           <td>Contrasena</td>
-          <td>Cargo</td>   
+          <td>Cargo</td>
+          <td></td>  
          </tr>
 <?php
  $conexion=mysqli_connect("localhost","root","","ibq");
 
-  $consulta="SELECT * FROM persona";
+  $consulta="SELECT * FROM ibq.usuarios";
   $resultado = mysqli_query($conexion, $consulta);
   $resultcheck = mysqli_num_rows($resultado);
 
@@ -80,6 +81,7 @@
    <td> <?php echo $row['usuario']?></td>
    <td> <?php echo $row['contrasena']?></td>
    <td> <?php echo $row['tipo_usuario']?></td>
+   <td> <a href="#" class="limpiar" onclick="confirmDelete('<?php echo $row["usuario"]; ?>')">Eliminar</a></td>
 
 
    </tr>
@@ -98,13 +100,13 @@
 <div>
  <div class="contenido">
   <div class="form_top">
-    <h2> REGISTRAR <span> PERSONA </span></h2>
+    <h2> REGISTRAR <span> USUARIO </span></h2>
     </div>
-    <form class="form_reg" action="registrar_per.php" method="POST">
+    <form class="form_reg" action="registrar_usu.php" method="POST">
   
-    <input class="input" type="text" placeholder="Usuario" name = " id_persona"required  autofocus>
-    <input class="input" type="text" placeholder="Contrasena" name= "Nombre" required>
-    <input class="input" type="tel"  placeholder="Cargo" name= "Apellido_Paterno" required>
+    <input class="input" type="text" placeholder="Usuario" name = "usuario"required  autofocus>
+    <input class="input" type="text" placeholder="Contrasena" name= "contrasena" required>
+    <input class="input" type="tel"  placeholder="Tipo_Usuario" name= "tipo_usuario" required>
      <div class="boton">
      <input class="crear" type="submit" value="Crear">
      <input class="limpiar" type="reset" value="LIMPIAR">
