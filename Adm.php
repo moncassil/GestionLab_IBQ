@@ -49,8 +49,8 @@
   <div class="contenedorContenido">
   <div class="centrado" >
   <h3 font color="black" face="arial">
-    <H2>Bienvenido(a) </H2>
-     <H2><?php echo $_SESSION['usuario']?></H2>
+    <H3 aling ="center"> Bienvenido(a) </H3>
+     <H4 aling = "center"><?php echo $_SESSION['usuario']?></H4>
 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
 
 <div class="btn-group" role="group">
