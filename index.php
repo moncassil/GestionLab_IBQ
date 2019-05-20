@@ -34,7 +34,8 @@
         <label for="password">Contraseña</label>
         <input type="password" placeholder="Enter Contraseña" name="password" required="yes">
         <input type="submit" value="Iniciar sesión">
-        <a href="olvidandoContrasena.html">Olvidaste tu contraseña?</a><br>
+        <a href="olvidandoContrasena.html">Olvidaste tu contraseña?</a>
+
      </form>
  </div>
   
