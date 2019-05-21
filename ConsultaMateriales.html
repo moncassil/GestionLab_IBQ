@@ -1,33 +1,35 @@
-<?php
-    session_start();
-    $varsesion = $_SESSION['usuario'];
-    
-
-    if ($varsesion == null || $varsesion = '') 
-    {
-      echo"<SCRIPT language= JavaScript >window.location.href='index.php'; </script>";
-      die();
-    }
-
-?>
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
-  <title>Administrador</title>
-  <link rel="stylesheet" href="css/EncabezadoPie.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/bootstrap.js">
-  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <title>Consulta Materiales</title>
+    <link rel="stylesheet" href="css/EncabezadoPie.css">
+
   <link rel="icon" type="image/x-icon" href="imagenesIBQ/pagina.ico">
+  <link rel="stylesheet" href="css/bootstrap.css">
+<script type="text/javascript"> </script>
+
+<style>
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+
+}
+th, td
+{
+  padding: 1px;
+}
+th  /*estilo centrado y color para el titulo de las tablas*/
+{
+  text-align: center;
+  background: #6faaf2;
+}
+</style>
+
 </head>
-
 <body>
-
-  <!---- Inicio logo de cabezera -->
+	 <!---- Inicio logo de cabezera -->
 <header>
   <div class="logo">
     <img src="imagenesIBQ/logoIBQ1.png">
@@ -72,26 +74,94 @@
 </div>
 <!---- Fin de menu  -->
 
+<!-- inicio de formulario-->
+<div>
+	<select>
+<option value="Select">Laboratorio</option>
+<option value="Lab1">Lab1</option>
+<option value="Lab2">Lab2</option>
+<option value="lab3">Lab3</option>
+<option value="Lab4">Lab4</option> 
+</select>
 
+<select>
+<option value="Select">Material</option>
+<option value="Quimico">Quimico</option>
+<option value="Instrumento">Instrumento</option> 
+</select>
+	<form action="/action_page.php">
+  Nombre : <input type="text" name="fname"><br>
+  <input type="submit" value="Limpiar">
+  <input type="submit" value="Buscar">
+</form> 
+</div>
+<!-- fin de formulario-->
+
+
+<!---- Inicio de tablas  -->
+<table style="width:25%">
+	<tr>
+    <th colspan="6">Lista de materiales</th>
+  </tr>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+    <th>...</th>
+    <th>...</th>
+    <th>....</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+    <td>200</td>
+    <td>205</td>
+    <td>280</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+    <td>10</td>
+    <td>0</td>
+    <td>70</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+    <td>20</td>
+    <td>30</td>
+    <td>40</td>
+  </tr>
+
+</table>
+
+
+
+<!---- Fin de tablas  -->
 
 
 <!--Inicio de pie pag -->
 
 <div class="footer">
 
-
 <font size=2>
-  ITA - ALGUNOS DERECHOS RESERVADOS © 2019 
+	ITA - ALGUNOS DERECHOS RESERVADOS © 2019 
 Avd. Instituto Tecnológico s/n Crucero del Cayaco C.P. 39905 
 E-mail de contacto: com.difusion@it-acapulco.edu.mx, 
 direccion@it-acapulco.edu.mx, 
 Teléfonos (744) 442-9010 al 19. 
-</font> 
+</font>
   
 </div>
 
 
        
+
+</body>
+</html>
 
 </body>
 </html>

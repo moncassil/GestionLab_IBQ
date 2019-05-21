@@ -1,0 +1,30 @@
+*{margin:0; padding:0;} /*quitar el margen de la pantalla*/
+ 
+ /* estilos para el contenido de la pag */
+body
+{
+  background: url(../imagenesIBQ/fondogris.jpg) no-repeat center top;
+  background-size: cover;
+  font-family: sans-serif;
+  height: 100vh;
+  /*background: -color:#324065;*/
+}
+ /* Fin para el contenido de la pag */
+header
+{
+	overflow: hidden; /*se impide el error en el desplazamiento de izquierda a derecha*/
+
+}
+/*Inicio de estilos para pie de pagina*/
+
+.footer
+{
+background-color: #a6b0e3;
+width: 100%;
+height: 40px;
+bottom: 0;
+position: fixed;
+text-align: center;
+color: #000; 
+}
+/*Fin de estilos para pie de pagina*/

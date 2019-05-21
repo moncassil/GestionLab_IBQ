@@ -4,22 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
   <title>Login</title>
-  <link rel="stylesheet" href="css/misIndexEstilos.css">
+  <link rel="stylesheet" href="css/estilosLogin.css">
+    <link rel="stylesheet" href="css/EncabezadoPie.css">
+
   <link rel="icon" type="image/x-icon" href="imagenesIBQ/pagina.ico">
   <link rel="stylesheet" href="css/bootstrap.css">
-<script type="text/javascript">
-</script>
-
+<script type="text/javascript"> </script>
 
 </head>
 <body>
-   <div>
-   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-   <ul class="nav">
-    <li class="nav-item">
-    <a class=" p-1 nav-link disabled active">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SISTEMA ELECTRÓNICO PARA EL CONTROL DE REACTIVOS Y MATERIALES EN LABORATORIOS</a>
-  </li>
-</div>
+   <!---- Inicio logo de cabezera -->
+<header>
+  <div class="logo">
+    <img src="imagenesIBQ/logoIBQ1.png">
+  </div>
+</header>
+<!---- Fin logo de cabezera -->
+   
 	
  <div class="login-box">
       <img src="imagenesIBQ/ibq.jpg" class="avatar" alt="Avatar Image">
@@ -39,17 +40,18 @@
      </form>
  </div>
   
-  <!--Inicio de pie pag-->
-     </div>
-        <div class="footer">
-          <FONT FACE="courier" SIZE=3 COLOR="#4B4A48">
-             
+  <!--Inicio de pie pag -->
+
+<div class="footer">
+
 ITA - ALGUNOS DERECHOS RESERVADOS © 2019 
 Avd. Instituto Tecnológico s/n Crucero del Cayaco C.P. 39905 
-E-mail de contacto: it.acapulco@hotmail.com, Teléfonos (744) 442-9010 al 19.
-          </FONT>
-        </div>
-        <!-- Fin del pie de pag-->
+E-mail de contacto: com.difusion@it-acapulco.edu.mx, 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;direccion@it-acapulco.edu.mx, 
+Teléfonos (744) 442-9010 al 19. 
+  
+</div>
+
 
 
 </body>

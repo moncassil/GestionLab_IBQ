@@ -1,21 +1,9 @@
-body {
-  margin: 0;
-  padding: 0;
-  background: url(../imagenesIBQ/fondogris.jpg) no-repeat center top;
-  background-size: cover;
-  font-family: sans-serif;
-  height: 100vh;
-
-
-  background: -color:#324065;
-}
-
 .login-box {
   width: 320px;
   height: 420px;
   background: #605D59;
   color: #FBFDFB;
-  top: 44%; /* ayuda a subir o baja todo el login*/
+  top: 48%; /* ayuda a subir o baja todo el login*/
   left: 50%;
   position: absolute;
   transform: translate(-50%, -35%);
@@ -121,26 +109,3 @@ div::after
     transform: translate(-50%, -50%);
 }
 
-
-
-
-/* Inicio de estilos para el pie de pag*/
-.footer{
-  background-color: #ffffff; /*color de la franja*/
-  width: 205; /* dimensiones de la franja*/
-  height:48px; /* dimensiones de la franja*/
-  bottom: 0; /*ayuda a que el pie este en la parte inferior de la pag*/
-  position: fixed;
-  text-align: center; /* Texto centrado*/
-  color: #000;
-}
-
-#miParrafo{
-  width: 200px;
-  background: white;
-}
-
-.miParrafo{
-  width: 500px;
-  background: green;
-}
