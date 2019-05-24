@@ -13,7 +13,7 @@ body{
  max-width: 400px;
  height: auto;
  background-color: #EFEFEF;
- margin: 3% ;
+ margin: 0.5% ;
  padding-bottom: 1rem; /* largo hacia abajo del formulario*/
 }
 .form_top {

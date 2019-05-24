@@ -101,7 +101,7 @@ th  /*estilo centrado y color para el titulo de las tablas*/
 <font size=2>
 	ITA - ALGUNOS DERECHOS RESERVADOS © 2019 
 Avd. Instituto Tecnológico s/n Crucero del Cayaco C.P. 39905 
-E-mail de contacto: com.difusion@it-acapulco.edu.mx, 
+<p>E-mail de contacto: com.difusion@it-acapulco.edu.mx, 
 direccion@it-acapulco.edu.mx, 
 Teléfonos (744) 442-9010 al 19. 
 </font>

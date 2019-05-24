@@ -4,7 +4,7 @@ table{
 	border-collapse: collapse;
 	width: 60%;
 	position: absolute;
-    top: 135px;
+    top: 203px; /* sube y baja toda la tabla */
     left: 500px;
 }
 th, td{
@@ -14,7 +14,7 @@ th, td{
 
 thead{
 	background-color:  orange;
-	color: blue;
+	color: #171309;
     width: 100%;
 	position: absolute;
     top: -45px;
