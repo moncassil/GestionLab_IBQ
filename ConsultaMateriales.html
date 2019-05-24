@@ -29,6 +29,8 @@ th  /*estilo centrado y color para el titulo de las tablas*/
 
 </head>
 <body>
+   <script type="js/jquery3.3.1.min.js"></script>
+  <script type="js/main.js"></script>
 	 <!---- Inicio logo de cabezera -->
 <header>
   <div class="logo">
@@ -76,71 +78,19 @@ th  /*estilo centrado y color para el titulo de las tablas*/
 
 <!-- inicio de formulario-->
 <div>
-	<select>
-<option value="Select">Laboratorio</option>
-<option value="Lab1">Lab1</option>
-<option value="Lab2">Lab2</option>
-<option value="lab3">Lab3</option>
-<option value="Lab4">Lab4</option> 
-</select>
+	<label for="caja_busqueda">Buscar:</label>
+  <input type="text" name="caja_busqueda" id="caja_busqueda"></input>
 
-<select>
-<option value="Select">Material</option>
-<option value="Quimico">Quimico</option>
-<option value="Instrumento">Instrumento</option> 
-</select>
-	<form action="/action_page.php">
-  Nombre : <input type="text" name="fname"><br>
-  <input type="submit" value="Limpiar">
-  <input type="submit" value="Buscar">
-</form> 
+  <div id= "datos">
+  </div>
 </div>
 <!-- fin de formulario-->
 
 
-<!---- Inicio de tablas  -->
-<table style="width:25%">
-	<tr>
-    <th colspan="6">Lista de materiales</th>
-  </tr>
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th> 
-    <th>Age</th>
-    <th>...</th>
-    <th>...</th>
-    <th>....</th>
-  </tr>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-    <td>200</td>
-    <td>205</td>
-    <td>280</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
-    <td>10</td>
-    <td>0</td>
-    <td>70</td>
-  </tr>
-  <tr>
-    <td>John</td>
-    <td>Doe</td>
-    <td>80</td>
-    <td>20</td>
-    <td>30</td>
-    <td>40</td>
-  </tr>
-
-</table>
 
 
 
-<!---- Fin de tablas  -->
+
 
 
 <!--Inicio de pie pag -->
