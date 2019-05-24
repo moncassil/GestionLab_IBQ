@@ -26,7 +26,7 @@
 </head>
 
 <body>
-
+   
   <!---- Inicio logo de cabezera -->
 <header>
   <div class="logo">
@@ -52,7 +52,7 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CONSULTAS
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Personas</a>
+          <a class="dropdown-item" href="ConsultaUsu.php">Personas</a>
           <a class="dropdown-item" href="ConsultaMateriales.html">Materiales</a>
       </li>
       <li class="nav-item dropdown">
@@ -60,13 +60,17 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REGISTROS
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Personas</a>
-          <a class="dropdown-item" href="#">Cuentas</a>
+          <a class="dropdown-item" href="usuario.php">Personas</a>
+          <a class="dropdown-item" href="crearcuenta.php">Cuentas</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Quimicos</a>
-          <a class="dropdown-item" href="#">Instrumentos</a>
+          <a class="dropdown-item" href="quimicos.php">Quimicos</a>
+          <a class="dropdown-item" href="instrumentos.php">Instrumentos</a>
         </div>
       </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="cerrar_sesion.php">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CERRAR SESION<span class="sr-only">(current)</span></a>
+      </li>
+
     </ul>
 </nav>
 </div>
