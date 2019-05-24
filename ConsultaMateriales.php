@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +10,7 @@
 
   <link rel="icon" type="image/x-icon" href="imagenesIBQ/pagina.ico">
   <link rel="stylesheet" href="css/bootstrap.css">
-<script type="text/javascript"> </script>
+
 
 <style>
 table, th, td {
@@ -29,8 +31,7 @@ th  /*estilo centrado y color para el titulo de las tablas*/
 
 </head>
 <body>
-   <script type="js/jquery3.3.1.min.js"></script>
-  <script type="js/main.js"></script>
+   
 	 <!---- Inicio logo de cabezera -->
 <header>
   <div class="logo">
@@ -108,10 +109,13 @@ Teléfonos (744) 442-9010 al 19.
 </div>
 
 
-       
+   <script type="text/javascript" src="js/jquery3.3.1.min.js"> </script>
 
-</body>
-</html>
+  <script type="text/javascript" src="js/main.js"></script>    
+<?php
+include("buscar.php");
+?>
+
 
 </body>
 </html>
