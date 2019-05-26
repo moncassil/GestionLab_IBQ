@@ -136,7 +136,7 @@
          <td> <?php echo $row['id_almacen']?></td>
          <td> <?php echo $row['clave_instrum']?></td>
          <td> <?php echo $row['nom_instrum']?></td>
-         <td> <?php echo $row['num_gaveta']?></td>
+         <td> <?php echo $row['ubicacion_inst']?></td>
          <td> <?php echo $row['cantidad']?></td>
          <td> <?php echo $row['obser_instrum']?></td>
          <td> <a href="#" class="limpiar" onclick="confirmDelete('<?php echo $row['clave_instrum']; ?>')">Eliminar</a></td>
@@ -159,7 +159,8 @@
  		<h2> REGISTRO DE<span> INSTRUMENTO </span></h2>
     </div>
     <form class="form_reg" action="registrar_ins.php" method="POST">
-    
+
+    <input class="input" type="text" placeholder="id_almacen" name = "id_almacen"required  autofocus>
     <input class="input" type="text" placeholder="clave_instrum" name = "clave_instrum"required  autofocus>
     <input class="input" type="text" placeholder="nom_instrum" name= "nom_instrum" required>
     <input class="input" type="tel"  placeholder="num_gaveta" name= "num_gaveta" required>

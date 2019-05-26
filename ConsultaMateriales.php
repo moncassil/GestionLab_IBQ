@@ -7,10 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
   <title>Consulta Materiales</title>
     <link rel="stylesheet" href="css/EncabezadoPie.css">
-
+    <link rel="stylesheet" href="css/estilotablas.css">
   <link rel="icon" type="image/x-icon" href="imagenesIBQ/pagina.ico">
   <link rel="stylesheet" href="css/bootstrap.css">
-
+  
 
 <style>
 table, th, td {
@@ -78,14 +78,71 @@ th  /*estilo centrado y color para el titulo de las tablas*/
 <!---- Fin de menu  -->
 
 <!-- inicio de formulario-->
-<div>
-	<label for="caja_busqueda">Buscar:</label>
-  <input type="text" name="caja_busqueda" id="caja_busqueda"></input>
+<form action="ConsultaMateriales.php" method ="POST">
+	
+  <input type="text" name="consulta" id="consulta"></input>
+  <input type="submit" value="Buscar">
 
-  <div id= "datos">
-  </div>
-</div>
+ </form>
+
 <!-- fin de formulario-->
+
+<center>
+    <table >
+      <thead font color="black">
+      <tr>
+        
+        <th colspan="1"  font color = "#000000" >
+          <th colspan="10"> <center>LISTA DE QUÍMICOS</center></th> 
+        </tr> 
+      
+      <tbody>
+        <tr>
+          <td>Almacen</td>
+          <td>Clave Químico</td>
+          <td>Nombre</td>
+          <td>Gaveta</td>
+          <td>Cantidad</td>
+          <td>Gramaje Total</td>
+          <td>Observaciones</td>
+          <td>Accion</td>
+        </tr>
+
+<?php
+ $conexion=mysqli_connect("localhost","root","","ibq");
+
+  $consulta=$_POST['consulta'];
+  $query="SELECT * FROM quimicos";
+  $resultado = mysqli_query($conexion, $query);
+  $resultcheck = mysqli_num_rows($resultado);
+
+  if (isset($_POST['consulta'])) {
+      $q =$_POST['consulta'];
+      $query= "SELECT * FROM ibq.quimicos WHERE nombre_quim LIKE '%".$q."%'";
+    }
+
+    
+  while($row=mysqli_fetch_array($query))
+  {
+  ?>
+    <tr>
+   <td> <?php echo $row['id_almacen']?></td>
+   <td> <?php echo $row['clave_quim']?></td>
+   <td> <?php echo $row['nombre_quim']?></td>
+   <td> <?php echo $row['num_gaveta_quim']?></td>
+   <td> <?php echo $row['tipo_cant']?></td>
+   <td> <?php echo $row['gramaje']?></td>
+   <td> <?php echo $row['obs_quim']?></td>
+   <td> <a href="#" class="limpiar" onclick="confirmDelete('<?php echo $row["clave_quim"]; ?>')">Eliminar</a></td>
+
+   </tr>
+   <?php
+ }
+ ?>
+?>
+
+
+
 
 
 
@@ -112,9 +169,7 @@ Teléfonos (744) 442-9010 al 19.
    <script type="text/javascript" src="js/jquery3.3.1.min.js"> </script>
 
   <script type="text/javascript" src="js/main.js"></script>    
-<?php
-include("buscar.php");
-?>
+
 
 
 </body>
