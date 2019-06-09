@@ -6,7 +6,6 @@
   <title>Login</title>
   <link rel="stylesheet" href="css/estilosLogin.css">
     <link rel="stylesheet" href="css/EncabezadoPie.css">
-
   <link rel="icon" type="image/x-icon" href="imagenesIBQ/pagina.ico">
   <link rel="stylesheet" href="css/bootstrap.css">
 <script type="text/javascript"> </script>
@@ -15,6 +14,7 @@
 <body>
    <!---- Inicio logo de cabezera -->
 <header>
+  
   <div class="logo">
     <img src="imagenesIBQ/logoIBQ1.png">
   </div>
@@ -44,13 +44,16 @@
 
 <div class="footer">
 
-ITA - ALGUNOS DERECHOS RESERVADOS © 2019 
+<font size=2>
+  ITA - ALGUNOS DERECHOS RESERVADOS © 2019 
 Avd. Instituto Tecnológico s/n Crucero del Cayaco C.P. 39905 
 E-mail de contacto: com.difusion@it-acapulco.edu.mx, 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;direccion@it-acapulco.edu.mx, 
+direccion@it-acapulco.edu.mx, 
 Teléfonos (744) 442-9010 al 19. 
+</font> 
   
 </div>
+<!--Fin de pie pag -->
 
 
 
