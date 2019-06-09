@@ -8,17 +8,18 @@
 	$num_gaveta=$_POST['num_gaveta'];
 	$cantidad=$_POST['cantidad'];
 	$obser_instrum=$_POST['obser_instrum'];
+	$id_almacen = $_POST['id_almacen'];
 
 
-    agregarins($clave_instru, $nom_instrum, $num_gaveta, $cantidad, $obser_instrum);
+    agregarins($clave_instru, $nom_instrum, $num_gaveta, $cantidad, $obser_instrum, $id_almacen);
 	
 
-	function agregarins($clave_instru, $nom_instrum, $num_gaveta, $cantidad, $obser_instrum)
+	function agregarins($clave_instru, $nom_instrum, $num_gaveta, $cantidad, $obser_instrum, $id_almacen)
 	{
 	global $conexion;
 
-	$sql ="INSERT INTO ibq.instrumento(clave_instrum,nom_instrum,num_gaveta,cantidad,obser_instrum)
-	VALUES('$clave_instru','$nom_instrum','$num_gaveta','$cantidad','$obser_instrum')";
+	$sql ="INSERT INTO ibq.instrumento(clave_instrum,nom_instrum,num_gaveta,cantidad,obser_instrum,id_almacen)
+	VALUES('$clave_instru','$nom_instrum','$num_gaveta','$cantidad','$obser_instrum', '$id_almacen')";
 
 	$rs=$conexion ->query($sql);
 

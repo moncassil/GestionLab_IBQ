@@ -21,7 +21,7 @@
     $resultado = $conn->query($query);
 
     if ($resultado->num_rows>0) {
-    	$salida.="<table border=1 class='css/estilotablas.css'>
+    	$salida.="<table border=1 class='tabla_datos'>
     			<thead>
     	<tr>
           <td>Almacen</td>
@@ -60,6 +60,6 @@
 
     $conn->close();
 
-
+header("Location: ConsultaMateriales.php");
 
 ?>
