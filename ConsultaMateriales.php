@@ -5,29 +5,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
-  <title>Consulta Materiales</title>
-    <link rel="stylesheet" href="css/EncabezadoPie.css">
-    <link rel="stylesheet" href="css/estilotablas.css">
-  <link rel="icon" type="image/x-icon" href="imagenesIBQ/pagina.ico">
-  <link rel="stylesheet" href="css/bootstrap.css">
   
+    <link rel="stylesheet" href="css/EncabezadoPie.css">
+     <link rel="stylesheet" href="css/estilotablas.css">
+    <link rel="icon" type="image/x-icon" href="imagenesIBQ/pagina.ico">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.js">
+  
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
 
-<style>
-table, th, td {
-  border: 2px solid black;
-  border-collapse: collapse;
+<title>Consulta Materiales</title>
 
-}
-th, td
-{
-  padding: 1px;
-}
-th  /*estilo centrado y color para el titulo de las tablas*/
-{
-  text-align: center;
-  background: #6faaf2;
-}
-</style>
 
 </head>
 <body>
@@ -88,13 +77,28 @@ th  /*estilo centrado y color para el titulo de las tablas*/
 <!-- fin de formulario-->
 
 <center>
+  <br><h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LISTA DE USUARIO</h2>
+
+    <table >
+      <thead font color="black">
+      
+          <!--<th colspan="10">LISTA DE PERSONAS</th>--> 
+      <tbody>
+        
+        <tr BGCOLOR="#8bb2c7">
+          <td>id persona</td>
+          <td>id persona</td>
+          <td>Nombre </td>
+          <td>Apellido Paterno</td>
+          <td>Apellido Materno</td>
+          <td>Telefono </td>
+          <td>Cargo</td>
+          <td>Comentarios</td>      
+         </tr>
+  <!--<br><h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LISTA DE MATERIALES</h2>
     <table >
       <thead font color="black">
       <tr>
-        
-        <th colspan="1"  font color = "#000000" >
-          <th colspan="10"> <center>LISTA DE QUÍMICOS</center></th> 
-        </tr> 
       
       <tbody>
         <tr>
@@ -107,7 +111,7 @@ th  /*estilo centrado y color para el titulo de las tablas*/
           <td>Observaciones</td>
           <td>Accion</td>
         </tr>
-
+-->
 <?php
  $conexion=mysqli_connect("localhost","root","","ibq");
 

@@ -15,29 +15,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content=" width=device-width, initial-scale=1.0">
+ 
   <link rel="stylesheet" href="css/EncabezadoPie.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/bootstrap.js">
-  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
   <link rel="icon" type="image/x-icon" href="imagenesIBQ/pagina.ico">
   <link rel="stylesheet" href="css/formulario.css">
   <link rel="stylesheet" href="css/estilotablas.css">
- 
-  <link rel="stylesheet" href="css/EncabezadoPie.css">
+  
+
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+  
 
   <title>Consultar Usuarios</title>
 </head>
 
 <body>
-   <!---- Inicio logo de cabezera -->
-<header>
-  <div class="logo">
-    <img src="imagenesIBQ/logoIBQ1.png">
-  </div>
-</header>
-<!---- Fin logo de cabezera -->
-
+  
  <script type="text/javascript">
   function confirmDelete(id_persona)
   {
@@ -53,6 +49,14 @@
     }
 
 </script>
+
+ <!---- Inicio logo de cabezera -->
+<header>
+  <div class="logo">
+    <img src="imagenesIBQ/logoIBQ1.png">
+  </div>
+</header>
+<!---- Fin logo de cabezera -->
 
 <!-- Inicio Menu -->
 <div>
