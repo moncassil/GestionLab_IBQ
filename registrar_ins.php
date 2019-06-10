@@ -18,8 +18,8 @@
 	{
 	global $conexion;
 
-	$sql ="INSERT INTO ibq.instrumento(clave_instrum,nom_instrum,num_ubicacion_inst,obser_instrum,id_almacen)
-	VALUES('$clave_instru','$nom_instrum','$num_gaveta','$cantidad','$obser_instrum', '$id_almacen')";
+	$sql ="INSERT INTO ibq.instrumento(clave_instrum,nom_instrum,ubicacion_inst,cantidad,obser_instrum,id_almacen)
+	VALUES('$clave_instru','$nom_instrum','$num_gaveta','$cantidad','$obser_instrum','$id_almacen')";
 
 	$rs=$conexion ->query($sql);
 	var_dump("$sql");
