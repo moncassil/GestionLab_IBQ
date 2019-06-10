@@ -16,7 +16,7 @@
    <!---- Inicio logo de cabezera -->
 <header>
   <div class="logo">
-    <img src="imagenesIBQ/logoIBQ1.png">
+    <img src="imagenesIBQ/logoIBQ1.png" class="ajustarfrente">
   </div>
 </header>
 <!---- Fin logo de cabezera -->
