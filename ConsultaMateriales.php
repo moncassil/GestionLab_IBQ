@@ -107,8 +107,8 @@
       <label>LABORATORIO</label>
       <select name="laboratorios">
         <option>Todos</option>
-        <option>01</option>
-        <option>02</option>
+        <option>01_la</option>
+        <option>02_isc</option>
         <option>03</option>
         <option>04</option>
         <option>05</option>
