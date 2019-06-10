@@ -23,7 +23,7 @@
    ?>
 
    <script type="text/javascript">
-     alert("Instrumento eliminado correctamente");
+     alert("Químico eliminado correctamente");
      window.location.href='quimicos.php';
 
 
