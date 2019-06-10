@@ -23,6 +23,7 @@
   <link rel="icon" type="image/x-icon" href="imagenesIBQ/pagina.ico">
   <link rel="stylesheet" href="css/formulario.css">
   <link rel="stylesheet" href="css/estilotablas.css">
+ 
   <link rel="stylesheet" href="css/EncabezadoPie.css">
 
   <title>Consultar Usuarios</title>
@@ -96,13 +97,16 @@
 <!-- Fin del Menu -->
 
 <center>
+  <br><h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LISTA DE USUARIO</h2>
+
     <table >
       <thead font color="black">
-      <tr>
+      
           <!--<th colspan="10">LISTA DE PERSONAS</th>--> 
       <tbody>
         
-        <tr>
+        <tr BGCOLOR="#8bb2c7">
+          <td>id persona</td>
           <td>id persona</td>
           <td>Nombre </td>
           <td>Apellido Paterno</td>
@@ -156,7 +160,7 @@
     <input class="input" type="text" placeholder="Cargo" name= "Cargo" required >
    
      <div class="boton">
-     <input class="consultar" type="submit" value="CONSULTAR">
+     <input class="registrar" type="submit" value="CONSULTAR">
      <input class="limpiar" type="reset" value="LIMPIAR">
 
      </div>
@@ -171,7 +175,7 @@
 <font size=2>
   ITA - ALGUNOS DERECHOS RESERVADOS © 2019 
 Avd. Instituto Tecnológico s/n Crucero del Cayaco C.P. 39905 
-E-mail de contacto: com.difusion@it-acapulco.edu.mx, 
+<br>E-mail de contacto: com.difusion@it-acapulco.edu.mx, 
 direccion@it-acapulco.edu.mx, 
 Teléfonos (744) 442-9010 al 19. 
 </font> 

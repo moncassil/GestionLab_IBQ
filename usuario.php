@@ -19,7 +19,9 @@
 	<link rel="stylesheet" href="estilotablas.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/login.css">
-  <link rel="stylesheet" href="css/misAdmEstilos.css">
+  <link rel="stylesheet" href="css/EncabezadoPie.css">
+  <link rel="stylesheet" href="css/formulario.css">
+   <link rel="stylesheet" href="css/estilotablas.css">
   <link rel="icon" type="image/x-icon" href="imagenesIBQ/pagina.ico">
 	<title>Registro de Usuarios</title>
 </head>
@@ -41,32 +43,55 @@
 
 </script>
 
-   <!-- Inicio Menu -->
-   <div>
-   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-   <ul class="nav">
+   <!---- Inicio logo de cabezera -->
+     <div class="logo">
+    <img src="imagenesIBQ/logoIBQ1.png">
+  </div>
+<!---- Fin logo de cabezera -->
+
+<!---- Inicio de menu -->
+
+<div>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
   
-   <li class="nav-item">
-    <a class="p-1 nav-link disabled" href="Adm.php"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INICIO</a></FONT>
-  </li>
-    
-    <li class="nav-item">
-    <a class=" p-1 nav-link disabled active" href="quimicos.php"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QUÍMICOS</a></FONT>
-  </li>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <li class="nav-item">
-    <a class=" p-1 nav-link disabled active" href="instrumentos.php"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INSTRUMENTOS</a></FONT>
-  </li>
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.php">INICIO <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       CONSULTAS
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="ConsultaUsua.php">Personas</a>
+          <a class="dropdown-item" href="ConsultaMateriales.php">Materiales</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       REGISTROS
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="usuario.php">Personas</a>
+          <a class="dropdown-item" href="crearcuenta.php">Cuentas</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="quimicos.php">Quimicos</a>
+          <a class="dropdown-item" href="instrumentos.php">Instrumentos</a>
+        </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="cerrar_sesion.php">CERRAR SESION<span class="sr-only">(current)</span></a>
+      </li>
 
-   <li class="nav-item">
-    <a class=" p-1 nav-link disabled active">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SISTEMA ELECTRÓNICO PARA EL CONTROL DE REACTIVOS Y MATERIALES EN LABORATORIOS</a>
-  </li>
-
-    <li class="nav-item">
-    <a class="p-1 nav-link disabled" href="cerrar_sesion.php"><FONT SIZE=1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CERRAR SESION</a></FONT>
-  </li>
+    </ul>
+</nav>
 </div>
-<!-- Fin del Menu -->
+
+<!---- Fin de menu  -->
 
 <center>
     <table >
@@ -139,5 +164,18 @@
    
     </form>
 </div>
+</div>
+<!--Inicio de pie pag -->
+<div class="footer">
+<font size=2>
+  ITA - ALGUNOS DERECHOS RESERVADOS © 2019 
+Avd. Instituto Tecnológico s/n Crucero del Cayaco C.P. 39905 
+<br>E-mail de contacto: com.difusion@it-acapulco.edu.mx, 
+direccion@it-acapulco.edu.mx, 
+Teléfonos (744) 442-9010 al 19. 
+</font> 
+</div>    
+<!--Fin de pie pag -->
+
 </body>
 </html>

@@ -1,7 +1,7 @@
 /*http://graphemica.com*/
 /*SE INDICA LA FUENTE QUE SE UTILIZA*/
 html{
- font-size:	14.5px; /* tamano del formulario*/
+ font-size:	12px; /* tamano del formulario*/
  font-family: 'Lato', sans-serif;
 }
 /*SE INDICA EL COLOR DE FONDO*/
@@ -20,7 +20,7 @@ body{
 	width: 100%; /*lago de la franja naranja superior*/
 	text-align: center;
 	padding: 2rem 0 1rem;
-	border-top: solid .4rem #F39B53;
+	border-top: solid .4rem #254873;
 	margin-bottom: 0rem;
 }
 /*CLASE form_top*/
@@ -31,7 +31,7 @@ body{
 }
 /*SIRVE PARA DAR ESTILOS AL H2*/
 h2 span{
-	color: #F39B53;
+	color: #577191;
 
 }
 
@@ -58,18 +58,18 @@ h2 span{
 }
 /*SIRVE PARA PRENDER EL FOCO CUANDO ESTE ACTIVO */
 .input:focus{
-	border-bottom: solid #F39B53 .2rem;
+	border-bottom: solid #254873 .2rem;
 }
 /*PROPIEDADES DE LOS BOTONES*/
 .registrar, .limpiar{
 	width: 40%;
 	border-bottom: none;
-	background-color: #31B1E5;
+	background-color: #1d7cf0;
 	color: white;
 }
 /*COLOR DEL BOTON LIMPIAR*/
 .limpiar{
-	background-color: #EDA135;
+	background-color: #1d7cf0;
 }
 /*CAMBIA DE COLOR CUANDO SE LE PASA EL MAUSE*/
 .registrar:hover{
@@ -77,5 +77,7 @@ h2 span{
 }
 /*CAMBIA DE COLOR CUANDO SE LE PASA EL MAUSE*/
 .limpiar:hover{
-	background-color: #FA9535;
+	background-color: #4C9ED9;
+}
+;
 }

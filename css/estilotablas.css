@@ -4,9 +4,9 @@ table{
 	border-collapse: collapse;
 	width: 60%;
 	position: absolute;
-    top: 203px; /* sube y baja toda la tabla */
-    left: 500px;
-}
+    top: 185px; /* sube y baja toda la tabla */
+    left: 450px;
+} 
 th, td{
 	border: solid 1px black;
 	padding: 10px;
@@ -23,7 +23,7 @@ thead{
 tr:nth-child(even){
 	background-color: #ddd;
 }
-tr:hover td{
+/*tr:hover td{
 	background-color: #EB8437;
 	color: white;
-}
+}*/
