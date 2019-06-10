@@ -86,14 +86,14 @@
       <tbody>
         
         <tr BGCOLOR="#8bb2c7">
-          <td>id persona</td>
-          <td>id persona</td>
-          <td>Nombre </td>
-          <td>Apellido Paterno</td>
-          <td>Apellido Materno</td>
-          <td>Telefono </td>
-          <td>Cargo</td>
-          <td>Comentarios</td>      
+          <td>Almacen</td>
+          <td>Clave Químico</td>
+          <td>Nombre</td>
+          <td>Gaveta</td>
+          <td>Cantidad</td>
+          <td>Gramaje Total</td>
+          <td>Observaciones</td>
+          <td>Accion</td>     
          </tr>
   <!--<br><h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LISTA DE MATERIALES</h2>
     <table >
